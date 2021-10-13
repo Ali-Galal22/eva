@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-ExtraBold.ttf">
+            <string>Tajawal-ExtraBold</string>
+        </array>
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartUpViewController" customModule="Eva" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonOurProjects" destination="GO7-w2-HcF" id="wvw-ck-YpT"/>
+                <outlet property="buttonSkip" destination="CyP-a6-VuJ" id="T5M-ri-g8x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-CJ-EXw">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup-image" translatesAutoresizingMaskIntoConstraints="NO" id="dC1-Zy-miu">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Itg-03-qWK">
+                            <rect key="frame" x="30" y="362" width="354" height="128"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مشاريع بأحدث الأساليب العقارية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF5-GU-3Em">
+                                    <rect key="frame" x="46.5" y="94" width="261.5" height="18"/>
+                                    <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ايفا العقارية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgC-uW-ad2">
+                                    <rect key="frame" x="71" y="36" width="212" height="38"/>
+                                    <fontDescription key="fontDescription" name="Tajawal-ExtraBold" family="Tajawal" pointSize="38"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="eF5-GU-3Em" secondAttribute="bottom" constant="16" id="8Tu-Yf-U1c"/>
+                                <constraint firstItem="pgC-uW-ad2" firstAttribute="centerX" secondItem="eF5-GU-3Em" secondAttribute="centerX" id="8kz-Il-cZn"/>
+                                <constraint firstItem="eF5-GU-3Em" firstAttribute="top" secondItem="pgC-uW-ad2" secondAttribute="bottom" constant="20" id="Me4-aA-H4y"/>
+                                <constraint firstItem="eF5-GU-3Em" firstAttribute="centerX" secondItem="Itg-03-qWK" secondAttribute="centerX" id="Ua5-Ve-1AZ"/>
+                                <constraint firstAttribute="height" constant="128" id="mB9-FD-sz7"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neS-fh-oOn">
+                            <rect key="frame" x="0.0" y="690" width="414" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyP-a6-VuJ">
+                                    <rect key="frame" x="186" y="89" width="42" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="31" id="dvy-Za-t8N"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="تخطي">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonSkipClicked:" destination="-1" eventType="touchUpInside" id="DWG-MN-KKU"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GO7-w2-HcF">
+                                    <rect key="frame" x="20" y="19" width="374" height="50"/>
+                                    <color key="backgroundColor" name="eva-blue-color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="lLT-E0-lxK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="20"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="مشاريعنا العقارية">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonOurProjectsClicked:" destination="-1" eventType="touchUpInside" id="Jjb-yO-kIH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="CyP-a6-VuJ" secondAttribute="bottom" constant="8" id="5nh-1b-cL2"/>
+                                <constraint firstAttribute="height" constant="128" id="Gs1-UD-gXz"/>
+                                <constraint firstItem="CyP-a6-VuJ" firstAttribute="centerX" secondItem="neS-fh-oOn" secondAttribute="centerX" id="LBT-PD-MER"/>
+                                <constraint firstItem="GO7-w2-HcF" firstAttribute="leading" secondItem="neS-fh-oOn" secondAttribute="leading" constant="20" id="T5o-ge-X3Y"/>
+                                <constraint firstAttribute="trailing" secondItem="GO7-w2-HcF" secondAttribute="trailing" constant="20" id="bYO-qG-fBP"/>
+                                <constraint firstItem="CyP-a6-VuJ" firstAttribute="top" secondItem="GO7-w2-HcF" secondAttribute="bottom" constant="20" id="c87-NW-gte"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="startup-bg-color"/>
+                    <constraints>
+                        <constraint firstItem="dC1-Zy-miu" firstAttribute="width" secondItem="rwF-CJ-EXw" secondAttribute="width" id="BxA-jZ-snE"/>
+                        <constraint firstAttribute="bottom" secondItem="neS-fh-oOn" secondAttribute="bottom" id="C1E-OZ-yUK"/>
+                        <constraint firstItem="Itg-03-qWK" firstAttribute="leading" secondItem="rwF-CJ-EXw" secondAttribute="leading" constant="30" id="Ku2-ga-ueK"/>
+                        <constraint firstItem="neS-fh-oOn" firstAttribute="leading" secondItem="rwF-CJ-EXw" secondAttribute="leading" id="OUi-2U-ceS"/>
+                        <constraint firstItem="dC1-Zy-miu" firstAttribute="height" secondItem="rwF-CJ-EXw" secondAttribute="height" multiplier="0.4" id="fN6-d5-HEt"/>
+                        <constraint firstItem="dC1-Zy-miu" firstAttribute="top" secondItem="rwF-CJ-EXw" secondAttribute="top" id="iwT-sB-Ij0"/>
+                        <constraint firstItem="neS-fh-oOn" firstAttribute="top" secondItem="Itg-03-qWK" secondAttribute="bottom" constant="200" id="jvH-oa-Qpy"/>
+                        <constraint firstItem="dC1-Zy-miu" firstAttribute="centerX" secondItem="rwF-CJ-EXw" secondAttribute="centerX" id="kkA-35-rLK"/>
+                        <constraint firstAttribute="trailing" secondItem="neS-fh-oOn" secondAttribute="trailing" id="qnb-rs-BUI"/>
+                        <constraint firstAttribute="trailing" secondItem="Itg-03-qWK" secondAttribute="trailing" constant="30" id="ub4-Xy-UaW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="startup-bg-color"/>
+            <constraints>
+                <constraint firstItem="rwF-CJ-EXw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ax7-qd-Co5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rwF-CJ-EXw" secondAttribute="bottom" id="KB0-kh-g4P"/>
+                <constraint firstItem="rwF-CJ-EXw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iOF-HR-O6p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rwF-CJ-EXw" secondAttribute="trailing" id="khm-cV-YR7"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="startup-image" width="1016" height="381"/>
+        <namedColor name="eva-blue-color">
+            <color red="0.17647058823529413" green="0.29019607843137257" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="startup-bg-color">
+            <color red="0.92156862745098034" green="0.93333333333333335" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
