@@ -14,6 +14,11 @@ class HomeCoordinator {
     
     init(navigationCoontroller: UINavigationController) {
         self.navigationCoontroller = navigationCoontroller
+        self.navigationCoontroller.navigationBar.backgroundColor = #colorLiteral(red: 0.1764705882, green: 0.2901960784, blue: 0.5607843137, alpha: 1)
+        self.navigationCoontroller.navigationBar.tintColor = .white
+        self.navigationCoontroller.navigationBar.isTranslucent = true
+        self.navigationCoontroller.navigationBar.setBackgroundImage(UIImage(), for: .default)
+
     }
     
     func start() {
@@ -24,11 +29,17 @@ class HomeCoordinator {
     private lazy var tabBarController: UITabBarController = {
         let viewModel = HomeViewModel(coordinator: self)
         let homeViewController = HomeTabBarViewController(viewModel: viewModel)
+        homeViewController.title = "الرئيسية"
+        homeViewController.tabBar.backgroundColor = .white
+
+
+        
         
         let mainCoordinator = MainCoordinator()
         let mainViewModel = MainViewModel(coordinator: mainCoordinator)
         let mainViewController = MainViewController(viewModel: mainViewModel)
-        
+        mainViewController.view.backgroundColor = #colorLiteral(red: 0.1764705882, green: 0.2901960784, blue: 0.5607843137, alpha: 1)
+
         
         let viewController2 = UIViewController()
         viewController2.view.backgroundColor = .green

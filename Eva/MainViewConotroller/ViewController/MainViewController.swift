@@ -25,8 +25,7 @@ class MainViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator = view.addLoadingIndicator()
@@ -37,7 +36,6 @@ class MainViewController: UIViewController {
     private func registerCells() {
         tableView.register(UINib(nibName: "\(HomeCell.self)", bundle: nil), forCellReuseIdentifier: "\(HomeCell.self)")
     }
-
 }
 
 
@@ -61,6 +59,19 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             break
         }
         return homeCell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == 1 {
+            return 16
+        }
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 16))
+        footerView.backgroundColor = #colorLiteral(red: 0.9215686275, green: 0.9333333333, blue: 0.9490196078, alpha: 1)
+        return footerView
     }
 }
 

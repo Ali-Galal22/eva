@@ -35,6 +35,8 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         UITabBar.appearance().tintColor = .black
         delegate = self
         self.tabBar.barTintColor = UIColor.white
+        
+        
         item1 = UITabBarItem(title: "الرئيسية", image: #imageLiteral(resourceName: "tabbar-home-icon"), selectedImage: #imageLiteral(resourceName: "tabbar-home-icon"))
         item2 = UITabBarItem(title: "المشاريع", image: #imageLiteral(resourceName: "tabbat-projects-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-projects-icon"))
         item3 = UITabBarItem(title: "الخدمات", image: #imageLiteral(resourceName: "tabbat-services-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-services-icon"))
