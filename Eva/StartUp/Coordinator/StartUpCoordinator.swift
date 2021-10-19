@@ -22,6 +22,7 @@ class StartUpCoordinator {
         let viewModel = StartUpViewModel(coordinator: self)
         let viewController = StartUpViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.navigationBar.isHidden = true
         return navigationController
     }()
 

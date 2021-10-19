@@ -41,7 +41,11 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         item2 = UITabBarItem(title: "المشاريع", image: #imageLiteral(resourceName: "tabbat-projects-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-projects-icon"))
         item3 = UITabBarItem(title: "الخدمات", image: #imageLiteral(resourceName: "tabbat-services-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-services-icon"))
         item4 = UITabBarItem(title: "القائمة", image: #imageLiteral(resourceName: "tabbar-menu-icon"), selectedImage: #imageLiteral(resourceName: "tabbar-menu-icon"))
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
     }
 
 }

@@ -12,8 +12,6 @@ import Foundation
 struct WebServiecsURLs {
     
     struct Authorization {
-        static let URL_GENERATE_TOKEN = "/user/generatetoken"
-        static let URL_LOGIN = "/user/login"
     }
 
 }

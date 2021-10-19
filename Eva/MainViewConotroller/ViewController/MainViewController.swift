@@ -29,13 +29,19 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator = view.addLoadingIndicator()
-        viewModel.configure(with: self)
+        viewModel.configure(with: self, view: .home)
         registerCells()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     private func registerCells() {
         tableView.register(UINib(nibName: "\(HomeCell.self)", bundle: nil), forCellReuseIdentifier: "\(HomeCell.self)")
     }
+    
 }
 
 

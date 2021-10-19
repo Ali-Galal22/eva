@@ -11,6 +11,8 @@ import Alamofire
 enum APIRouter: URLRequestConvertible {
     case homeList(queryParameters: [String: String])
     case listProjects(queryParameters: [String: String])
+    case getFilterValues(queryParameters: [String: String] = [:])
+    case filter(queryParameters: [String: String] = [:])
 }
 
 extension APIRouter {
@@ -18,7 +20,7 @@ extension APIRouter {
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
         switch self {
-        case .listProjects, .homeList:
+        case .listProjects, .homeList, .getFilterValues, .filter:
             return .get
         }
     }
@@ -41,7 +43,7 @@ extension APIRouter {
     // MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-        case .listProjects(let parameters), .homeList(let parameters):
+        case .listProjects(let parameters), .homeList(let parameters), .getFilterValues(let parameters), .filter(let parameters):
             return parameters
         }
     }

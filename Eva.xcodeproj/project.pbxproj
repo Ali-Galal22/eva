@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8418EE7C271D60E80036F574 /* FilterValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418EE7B271D60E80036F574 /* FilterValue.swift */; };
 		847CA8642713452300103602 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85C2713452300103602 /* LoadingState.swift */; };
 		847CA8652713452300103602 /* RequestParamters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85E2713452300103602 /* RequestParamters.swift */; };
 		847CA8662713452300103602 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85F2713452300103602 /* BaseRequest.swift */; };
@@ -45,16 +46,28 @@
 		847CA8F92716CECE00103602 /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847CA8F22716CECE00103602 /* Tajawal-Light.ttf */; };
 		847CA8FD2716D2BE00103602 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA8FB2716D2BE00103602 /* HomeCell.swift */; };
 		847CA8FE2716D2BE00103602 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847CA8FC2716D2BE00103602 /* HomeCell.xib */; };
+		8485C2BA27182AAB0087A533 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485C2B827182AAB0087A533 /* FilterViewController.swift */; };
+		8485C2BB27182AAB0087A533 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485C2B927182AAB0087A533 /* FilterViewController.xib */; };
+		8485C2BF271833700087A533 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485C2BD271833700087A533 /* FilterCell.swift */; };
+		8485C2C0271833700087A533 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485C2BE271833700087A533 /* FilterCell.xib */; };
+		8485C2C2271841870087A533 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485C2C1271841870087A533 /* Constants.swift */; };
+		8485C2C52718CEF70087A533 /* FilterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485C2C42718CEF70087A533 /* FilterHeaderView.swift */; };
+		8485C2C92718D04C0087A533 /* FilterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485C2C82718D04C0087A533 /* FilterHeaderView.xib */; };
 		849C541327134445000F1720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C541227134445000F1720 /* AppDelegate.swift */; };
 		849C541527134445000F1720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C541427134445000F1720 /* SceneDelegate.swift */; };
 		849C541C27134447000F1720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849C541B27134447000F1720 /* Assets.xcassets */; };
 		849C541F27134447000F1720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C541D27134447000F1720 /* LaunchScreen.storyboard */; };
+		84CA36C72719AE43001FA7BB /* FilterRoomNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA36C52719AE43001FA7BB /* FilterRoomNumberCell.swift */; };
+		84CA36C82719AE43001FA7BB /* FilterRoomNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CA36C62719AE43001FA7BB /* FilterRoomNumberCell.xib */; };
+		84EA2008271C27A500F2E859 /* FilterButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA2006271C27A500F2E859 /* FilterButtonCell.swift */; };
+		84EA2009271C27A500F2E859 /* FilterButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EA2007271C27A500F2E859 /* FilterButtonCell.xib */; };
 		B007BB943DDF16F7BD6A8F17 /* Pods_Eva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ABD6509277B425FE5EFB17 /* Pods_Eva.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F948D32A2C0FD4ADC8E7B3A /* Pods-Eva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.debug.xcconfig"; path = "Target Support Files/Pods-Eva/Pods-Eva.debug.xcconfig"; sourceTree = "<group>"; };
 		59B3E9AA04CD449525181ECE /* Pods-Eva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.release.xcconfig"; path = "Target Support Files/Pods-Eva/Pods-Eva.release.xcconfig"; sourceTree = "<group>"; };
+		8418EE7B271D60E80036F574 /* FilterValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterValue.swift; sourceTree = "<group>"; };
 		847CA85C2713452300103602 /* LoadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		847CA85E2713452300103602 /* RequestParamters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParamters.swift; sourceTree = "<group>"; };
 		847CA85F2713452300103602 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
@@ -93,6 +106,13 @@
 		847CA8F22716CECE00103602 /* Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Light.ttf"; sourceTree = "<group>"; };
 		847CA8FB2716D2BE00103602 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		847CA8FC2716D2BE00103602 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		8485C2B827182AAB0087A533 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		8485C2B927182AAB0087A533 /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		8485C2BD271833700087A533 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		8485C2BE271833700087A533 /* FilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		8485C2C1271841870087A533 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8485C2C42718CEF70087A533 /* FilterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterHeaderView.swift; sourceTree = "<group>"; };
+		8485C2C82718D04C0087A533 /* FilterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterHeaderView.xib; sourceTree = "<group>"; };
 		849C540F27134445000F1720 /* Eva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849C541227134445000F1720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849C541427134445000F1720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +120,10 @@
 		849C541E27134447000F1720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849C542027134447000F1720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84ABD6509277B425FE5EFB17 /* Pods_Eva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CA36C52719AE43001FA7BB /* FilterRoomNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRoomNumberCell.swift; sourceTree = "<group>"; };
+		84CA36C62719AE43001FA7BB /* FilterRoomNumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterRoomNumberCell.xib; sourceTree = "<group>"; };
+		84EA2006271C27A500F2E859 /* FilterButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonCell.swift; sourceTree = "<group>"; };
+		84EA2007271C27A500F2E859 /* FilterButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterButtonCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +154,7 @@
 				847CA85B2713452300103602 /* Enums */,
 				847CA85D2713452300103602 /* SharedModels */,
 				847CA8622713452300103602 /* Utils */,
+				8485C2C1271841870087A533 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -307,6 +332,7 @@
 		847CA8DC2716BC1300103602 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8485C2B727182A8C0087A533 /* Filter */,
 				847CA8FA2716D22700103602 /* Cells */,
 				847CA8DE2716BC4000103602 /* MainViewController.swift */,
 				847CA8DF2716BC4000103602 /* MainViewController.xib */,
@@ -319,6 +345,7 @@
 			children = (
 				847CA8E72716C4C200103602 /* HomeListResponse.swift */,
 				847CA8E92716C4D200103602 /* Service.swift */,
+				8418EE7B271D60E80036F574 /* FilterValue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -344,6 +371,37 @@
 				847CA8FC2716D2BE00103602 /* HomeCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8485C2B727182A8C0087A533 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				84EA2005271C275F00F2E859 /* FilterButtonCell */,
+				84CA36C42719AE18001FA7BB /* RoomNumberFilterCell */,
+				8485C2C32718CECC0087A533 /* FilterHeaderView */,
+				8485C2BC2718334E0087A533 /* FilterCell */,
+				8485C2B827182AAB0087A533 /* FilterViewController.swift */,
+				8485C2B927182AAB0087A533 /* FilterViewController.xib */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		8485C2BC2718334E0087A533 /* FilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				8485C2BD271833700087A533 /* FilterCell.swift */,
+				8485C2BE271833700087A533 /* FilterCell.xib */,
+			);
+			path = FilterCell;
+			sourceTree = "<group>";
+		};
+		8485C2C32718CECC0087A533 /* FilterHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				8485C2C42718CEF70087A533 /* FilterHeaderView.swift */,
+				8485C2C82718D04C0087A533 /* FilterHeaderView.xib */,
+			);
+			path = FilterHeaderView;
 			sourceTree = "<group>";
 		};
 		849C540627134445000F1720 = {
@@ -380,6 +438,24 @@
 				849C542027134447000F1720 /* Info.plist */,
 			);
 			path = Eva;
+			sourceTree = "<group>";
+		};
+		84CA36C42719AE18001FA7BB /* RoomNumberFilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				84CA36C52719AE43001FA7BB /* FilterRoomNumberCell.swift */,
+				84CA36C62719AE43001FA7BB /* FilterRoomNumberCell.xib */,
+			);
+			path = RoomNumberFilterCell;
+			sourceTree = "<group>";
+		};
+		84EA2005271C275F00F2E859 /* FilterButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				84EA2006271C27A500F2E859 /* FilterButtonCell.swift */,
+				84EA2007271C27A500F2E859 /* FilterButtonCell.xib */,
+			);
+			path = FilterButtonCell;
 			sourceTree = "<group>";
 		};
 		E6B74F8F7EF17A487F501CDE /* Pods */ = {
@@ -451,16 +527,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EA2009271C27A500F2E859 /* FilterButtonCell.xib in Resources */,
+				8485C2C92718D04C0087A533 /* FilterHeaderView.xib in Resources */,
 				847CA8FE2716D2BE00103602 /* HomeCell.xib in Resources */,
 				847CA8C52715F09A00103602 /* Colors.xcassets in Resources */,
 				847CA8E12716BC4000103602 /* MainViewController.xib in Resources */,
 				847CA8D72715FC1300103602 /* HomeTabBarViewController.xib in Resources */,
 				847CA8F82716CECE00103602 /* Tajawal-ExtraLight.ttf in Resources */,
+				8485C2C0271833700087A533 /* FilterCell.xib in Resources */,
 				847CA8F92716CECE00103602 /* Tajawal-Light.ttf in Resources */,
 				847CA87E2713454600103602 /* StartUpViewController.xib in Resources */,
 				847CA8F32716CECE00103602 /* Tajawal-Medium.ttf in Resources */,
 				849C541F27134447000F1720 /* LaunchScreen.storyboard in Resources */,
+				84CA36C82719AE43001FA7BB /* FilterRoomNumberCell.xib in Resources */,
 				847CA8F62716CECE00103602 /* Tajawal-Regular.ttf in Resources */,
+				8485C2BB27182AAB0087A533 /* FilterViewController.xib in Resources */,
 				847CA8F72716CECE00103602 /* Tajawal-ExtraBold.ttf in Resources */,
 				847CA8F52716CECE00103602 /* Tajawal-Black.ttf in Resources */,
 				847CA8F42716CECE00103602 /* Tajawal-Bold.ttf in Resources */,
@@ -518,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847CA8872714719500103602 /* ProjectsResponse.swift in Sources */,
+				84EA2008271C27A500F2E859 /* FilterButtonCell.swift in Sources */,
 				847CA8E02716BC4000103602 /* MainViewController.swift in Sources */,
 				847CA8792713454600103602 /* APIRouter.swift in Sources */,
 				847CA8642713452300103602 /* LoadingState.swift in Sources */,
@@ -526,6 +608,7 @@
 				847CA8812713468200103602 /* AppConfigurations.swift in Sources */,
 				847CA8662713452300103602 /* BaseRequest.swift in Sources */,
 				847CA87C2713454600103602 /* StartUpCoordinator.swift in Sources */,
+				8485C2C2271841870087A533 /* Constants.swift in Sources */,
 				847CA8652713452300103602 /* RequestParamters.swift in Sources */,
 				847CA8782713454600103602 /* APIClient.swift in Sources */,
 				847CA87D2713454600103602 /* StartUpViewController.swift in Sources */,
@@ -533,15 +616,20 @@
 				847CA8D62715FC1300103602 /* HomeTabBarViewController.swift in Sources */,
 				847CA8E62716BD9D00103602 /* MainCoordinator.swift in Sources */,
 				847CA8E82716C4C200103602 /* HomeListResponse.swift in Sources */,
+				8485C2BA27182AAB0087A533 /* FilterViewController.swift in Sources */,
 				847CA8672713452300103602 /* BaseResponse.swift in Sources */,
 				847CA8692713452300103602 /* Keychain.swift in Sources */,
+				8485C2BF271833700087A533 /* FilterCell.swift in Sources */,
 				849C541327134445000F1720 /* AppDelegate.swift in Sources */,
 				849C541527134445000F1720 /* SceneDelegate.swift in Sources */,
 				847CA87B2713454600103602 /* StartUpViewModel.swift in Sources */,
 				847CA8D22715F81D00103602 /* HomeViewModel.swift in Sources */,
 				847CA8FD2716D2BE00103602 /* HomeCell.swift in Sources */,
+				8418EE7C271D60E80036F574 /* FilterValue.swift in Sources */,
 				847CA8682713452300103602 /* BaseHeader.swift in Sources */,
+				8485C2C52718CEF70087A533 /* FilterHeaderView.swift in Sources */,
 				847CA8D02715F80400103602 /* HomeCoordinator.swift in Sources */,
+				84CA36C72719AE43001FA7BB /* FilterRoomNumberCell.swift in Sources */,
 				847CA8C72715F61B00103602 /* UIView+Extension.swift in Sources */,
 				847CA8852714710800103602 /* Project.swift in Sources */,
 				847CA8E42716BD0C00103602 /* MainViewModel.swift in Sources */,
@@ -682,7 +770,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WW3CGQFMJS;
+				DEVELOPMENT_TEAM = 2RTNC5CU2D;
 				INFOPLIST_FILE = Eva/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -701,7 +789,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WW3CGQFMJS;
+				DEVELOPMENT_TEAM = 2RTNC5CU2D;
 				INFOPLIST_FILE = Eva/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
