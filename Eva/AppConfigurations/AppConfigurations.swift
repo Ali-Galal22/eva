@@ -11,6 +11,8 @@ class Configurations: NSObject {
 
     // MARK: - Environments
     static var baseUrl: URL {
-        return URL(string: "https://demo.evaresc.com/api/")!
+        return URL(string: "http://demo.evaresc.com/api")!
+//        https://eva.momaiz.net/api/
+//        https://demo.evaresc.com/api
     }
 }

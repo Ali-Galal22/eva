@@ -14,7 +14,6 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     var item1: UITabBarItem?
     var item2: UITabBarItem?
     var item3: UITabBarItem?
-    var item4: UITabBarItem?
 
     private let viewModel: HomeViewModel
 
@@ -37,10 +36,9 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         self.tabBar.barTintColor = UIColor.white
         
         
-        item1 = UITabBarItem(title: "الرئيسية", image: #imageLiteral(resourceName: "tabbar-home-icon"), selectedImage: #imageLiteral(resourceName: "tabbar-home-icon"))
-        item2 = UITabBarItem(title: "المشاريع", image: #imageLiteral(resourceName: "tabbat-projects-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-projects-icon"))
-        item3 = UITabBarItem(title: "الخدمات", image: #imageLiteral(resourceName: "tabbat-services-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-services-icon"))
-        item4 = UITabBarItem(title: "القائمة", image: #imageLiteral(resourceName: "tabbar-menu-icon"), selectedImage: #imageLiteral(resourceName: "tabbar-menu-icon"))
+        item1 = UITabBarItem(title: "المشاريع", image: #imageLiteral(resourceName: "tabbat-projects-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-projects-icon"))
+        item2 = UITabBarItem(title: "الخدمات", image: #imageLiteral(resourceName: "tabbat-services-icon"), selectedImage: #imageLiteral(resourceName: "tabbat-services-icon"))
+        item3 = UITabBarItem(title: "القائمة", image: #imageLiteral(resourceName: "tabbar-menu-icon"), selectedImage: #imageLiteral(resourceName: "tabbar-menu-icon"))
     }
     
     override func viewWillAppear(_ animated: Bool) {

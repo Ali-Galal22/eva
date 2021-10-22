@@ -12,17 +12,24 @@ class APIClient {
     private static var session: Session!
     private static var headers: [String:String] = [:]
 
-    internal static func sessionManagerForDisabledSSL() -> Session {
+//    internal static func sessionManagerForDisabledSSL() -> Session {
+//        let man = ServerTrustManager(allHostsMustBeEvaluated: false, evaluators: [:])
+//
+//        return Session(serverTrustManager: man)
+//    }
+
+    static private var sessionManagerForDisabledSSL: Session = {
         let man = ServerTrustManager(allHostsMustBeEvaluated: false, evaluators: [:])
         return Session(serverTrustManager: man)
-    }
 
-
+    }()
 
     @discardableResult
     internal static func performRequest<T:Decodable>(route: APIRouter, decoder: JSONDecoder = JSONDecoder(), completion:@escaping (Result<T, AFError>)->Void) -> DataRequest {
         
-        session = sessionManagerForDisabledSSL()
+        session = sessionManagerForDisabledSSL
+        session.session.configuration.timeoutIntervalForRequest = 60
+//        session.session.configuration.requestCachePolicy = .reloadIgnoringCacheData
 
         return session.request(route).responseDecodable (decoder: decoder){ (response: DataResponse<T, AFError>) in
             completion(response.result)

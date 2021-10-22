@@ -13,6 +13,8 @@ enum APIRouter: URLRequestConvertible {
     case listProjects(queryParameters: [String: String])
     case getFilterValues(queryParameters: [String: String] = [:])
     case filter(queryParameters: [String: String] = [:])
+    case getServices(queryParameters: [String: String] = [:])
+    case sendRequest(queryParameters: SendRequestRequest)
 }
 
 extension APIRouter {
@@ -20,8 +22,10 @@ extension APIRouter {
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
         switch self {
-        case .listProjects, .homeList, .getFilterValues, .filter:
+        case .listProjects, .homeList, .getFilterValues, .filter, .getServices:
             return .get
+        case .sendRequest:
+            return .post
         }
     }
     
@@ -36,6 +40,8 @@ extension APIRouter {
     // MARK: - Path
     private var path: String {
         switch self {
+        case .sendRequest:
+            return "?action=send"
         default: return ""
         }
     }
@@ -43,8 +49,10 @@ extension APIRouter {
     // MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-        case .listProjects(let parameters), .homeList(let parameters), .getFilterValues(let parameters), .filter(let parameters):
+        case .listProjects(let parameters), .homeList(let parameters), .getFilterValues(let parameters), .filter(let parameters), .getServices(let parameters):
             return parameters
+        case.sendRequest(let parameters):
+            return parameters.getParamsAsJson()
         }
     }
     
@@ -61,7 +69,8 @@ extension APIRouter {
         var url = baseUrl
 
         if !path.isEmpty {
-            url = url.appendingPathComponent(path)
+            let urlString = url.absoluteString + path
+            url = URL(string: urlString)!
         }
 
         var urlRequest = try URLRequest(url: url, method: method)

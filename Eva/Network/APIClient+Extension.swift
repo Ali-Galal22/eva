@@ -24,7 +24,14 @@ extension APIClient {
     static func filter(parameters: [String: String], completion: @escaping (Result<BaseResponse<HomeListResponse>, AFError>) -> Void) {
         performRequest(route: APIRouter.filter(queryParameters: parameters), completion: completion)
     }
+    
+    static func getServices(parameters: [String: String], completion: @escaping (Result<BaseResponse<HomeListResponse>, AFError>) -> Void) {
+        performRequest(route: APIRouter.filter(queryParameters: parameters), completion: completion)
+    }
 
+    static func sendRequest(parameters: SendRequestRequest, completion: @escaping (Result<BaseResponse<SendRequestResponse>, AFError>) -> Void) {
+        performRequest(route: APIRouter.sendRequest(queryParameters: parameters), completion: completion)
+    }
 }
 class AuthenticationAPI: APIClient {
 //    static func generateToken(completion: @escaping (Result<BaseResponse<TokenInfo>, AFError>) -> Void) {

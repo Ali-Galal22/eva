@@ -14,5 +14,7 @@ struct Constants {
         static let FilterRoomNumberCell = "FilterRoomNumberCell"
         static let FilterHeaderView = "FilterHeaderView"
         static let FilterButtonCell = "FilterButtonCell"
+        static let ServiceCell = "ServiceCell"
+        
     }
 }

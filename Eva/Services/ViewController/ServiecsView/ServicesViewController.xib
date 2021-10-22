@@ -9,8 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTabBarViewController" customModule="Eva" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServicesViewController" customModule="Eva" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="bp8-sK-kR4" id="1K7-xL-Wdg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,21 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pQ-Il-CrJ">
-                    <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <items>
-                        <tabBarItem title="الرئيسية" id="JCG-MS-5lL"/>
-                        <tabBarItem title="المشاريع" id="I7O-7n-emV"/>
-                        <tabBarItem title="الخدمات" id="bWj-Yi-hDQ"/>
-                        <tabBarItem title="القائمة" id="w3k-Sj-dx0"/>
-                    </items>
-                </tabBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bp8-sK-kR4">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" name="bg-color"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="h9m-CM-gK9"/>
+                        <outlet property="delegate" destination="-1" id="S6j-qV-qMP"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="bg-color"/>
-            <point key="canvasLocation" x="132" y="115"/>
+            <constraints>
+                <constraint firstItem="bp8-sK-kR4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tds-Z6-8st"/>
+                <constraint firstItem="bp8-sK-kR4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bVN-Qc-vHh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bp8-sK-kR4" secondAttribute="bottom" id="dqc-dS-ucB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bp8-sK-kR4" secondAttribute="trailing" id="pUL-Dz-oco"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="98"/>
         </view>
     </objects>
     <resources>

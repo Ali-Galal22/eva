@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "arrow.png",
+      "filename" : "Group 1942.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "arrow@2x.png",
+      "filename" : "Group 1942@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "arrow@3x.png",
+      "filename" : "Group 1942@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -21,6 +21,6 @@
     "version" : 1
   },
   "properties" : {
-    "template-rendering-intent" : "template"
+    "template-rendering-intent" : "original"
   }
 }

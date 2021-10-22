@@ -31,6 +31,7 @@ class MainViewController: UIViewController {
         activityIndicator = view.addLoadingIndicator()
         viewModel.configure(with: self, view: .home)
         registerCells()
+//        test()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +43,29 @@ class MainViewController: UIViewController {
         tableView.register(UINib(nibName: "\(HomeCell.self)", bundle: nil), forCellReuseIdentifier: "\(HomeCell.self)")
     }
     
+//    private func test() {
+//        let Url = "http://demo.evaresc.com/api/?action=index"
+//        guard let serviceUrl = URL(string: Url) else { return }
+//        var request = URLRequest(url: serviceUrl)
+//        request.httpMethod = "GET"
+//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//        request.setValue("application/json", forHTTPHeaderField: "Accept")
+//
+//        let session = URLSession.shared
+//        session.dataTask(with: request) { (data, response, error) in
+//            if let response = response {
+//                print(response)
+//            }
+//            if let data = data {
+//                do {
+//                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+//                    print(json)
+//                } catch {
+//                    print(error)
+//                }
+//            }
+//        }.resume()
+//    }
 }
 
 

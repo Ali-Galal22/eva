@@ -20,5 +20,4 @@ struct HomeAboutObject: Codable {
     let content: String?
     let excerpt: String?
     let date: String?
-//    let image: String?
 }
