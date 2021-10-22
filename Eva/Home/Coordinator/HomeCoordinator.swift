@@ -53,10 +53,8 @@ class HomeCoordinator {
         servicesNavigationController.navigationBar.titleTextAttributes = textAttributes
         servicesCoordinator.setNavigationBar(navigationController: servicesNavigationController)
         
-//        let viewController2 = UIViewController()
-//        viewController2.view.backgroundColor = .green
-//        viewController2.title = "المشاريع"
-
+        
+        
         let viewController3 = UIViewController()
         viewController3.view.backgroundColor = .blue
         

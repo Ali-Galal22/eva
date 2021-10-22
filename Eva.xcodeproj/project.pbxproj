@@ -16,6 +16,10 @@
 		84640A4927216CC800FC7A72 /* SendRequestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A4827216CC800FC7A72 /* SendRequestCoordinator.swift */; };
 		84640A4F2721E50A00FC7A72 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A4D2721E50A00FC7A72 /* SuccessViewController.swift */; };
 		84640A502721E50A00FC7A72 /* SuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A4E2721E50A00FC7A72 /* SuccessViewController.xib */; };
+		84640A572722D8BC00FC7A72 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A552722D8BB00FC7A72 /* ServiceDetailsViewController.swift */; };
+		84640A582722D8BC00FC7A72 /* ServiceDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A562722D8BB00FC7A72 /* ServiceDetailsViewController.xib */; };
+		84640A5A2722D8F600FC7A72 /* ServiceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A592722D8F600FC7A72 /* ServiceDetailsViewModel.swift */; };
+		84640A5C2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A5B2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift */; };
 		847CA8642713452300103602 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85C2713452300103602 /* LoadingState.swift */; };
 		847CA8652713452300103602 /* RequestParamters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85E2713452300103602 /* RequestParamters.swift */; };
 		847CA8662713452300103602 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85F2713452300103602 /* BaseRequest.swift */; };
@@ -90,6 +94,10 @@
 		84640A4827216CC800FC7A72 /* SendRequestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestCoordinator.swift; sourceTree = "<group>"; };
 		84640A4D2721E50A00FC7A72 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		84640A4E2721E50A00FC7A72 /* SuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessViewController.xib; sourceTree = "<group>"; };
+		84640A552722D8BB00FC7A72 /* ServiceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewController.swift; sourceTree = "<group>"; };
+		84640A562722D8BB00FC7A72 /* ServiceDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailsViewController.xib; sourceTree = "<group>"; };
+		84640A592722D8F600FC7A72 /* ServiceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewModel.swift; sourceTree = "<group>"; };
+		84640A5B2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsCoordinator.swift; sourceTree = "<group>"; };
 		847CA85C2713452300103602 /* LoadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		847CA85E2713452300103602 /* RequestParamters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParamters.swift; sourceTree = "<group>"; };
 		847CA85F2713452300103602 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
@@ -186,18 +194,9 @@
 		84640A402721593500FC7A72 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84640A422721596000FC7A72 /* SendRequestRequest.swift */,
-				84640A442721632200FC7A72 /* SendRequestResponse.swift */,
-				84640A412721593E00FC7A72 /* SendRequestRquest */,
+				84640A5D2722DDF500FC7A72 /* SendRequest */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		84640A412721593E00FC7A72 /* SendRequestRquest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SendRequestRquest;
 			sourceTree = "<group>";
 		};
 		84640A4A272172AC00FC7A72 /* ServiecsView */ = {
@@ -209,13 +208,6 @@
 			path = ServiecsView;
 			sourceTree = "<group>";
 		};
-		84640A4B2721ADB300FC7A72 /* SuccessView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SuccessView;
-			sourceTree = "<group>";
-		};
 		84640A4C2721E4EE00FC7A72 /* SuccessView */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +215,72 @@
 				84640A4E2721E50A00FC7A72 /* SuccessViewController.xib */,
 			);
 			path = SuccessView;
+			sourceTree = "<group>";
+		};
+		84640A512722D87300FC7A72 /* ServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84640A552722D8BB00FC7A72 /* ServiceDetailsViewController.swift */,
+				84640A562722D8BB00FC7A72 /* ServiceDetailsViewController.xib */,
+			);
+			path = ServiceDetails;
+			sourceTree = "<group>";
+		};
+		84640A5D2722DDF500FC7A72 /* SendRequest */ = {
+			isa = PBXGroup;
+			children = (
+				84640A422721596000FC7A72 /* SendRequestRequest.swift */,
+				84640A442721632200FC7A72 /* SendRequestResponse.swift */,
+			);
+			path = SendRequest;
+			sourceTree = "<group>";
+		};
+		84640A5E2722DE0B00FC7A72 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				848AC45C271EE2400040B07C /* ServicesCoordinator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84640A5F2722DE1600FC7A72 /* SendRequest */ = {
+			isa = PBXGroup;
+			children = (
+				84640A4827216CC800FC7A72 /* SendRequestCoordinator.swift */,
+			);
+			path = SendRequest;
+			sourceTree = "<group>";
+		};
+		84640A602722DE2100FC7A72 /* ServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84640A5B2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift */,
+			);
+			path = ServiceDetails;
+			sourceTree = "<group>";
+		};
+		84640A612722DE3900FC7A72 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				848AC459271EE2020040B07C /* ServicesViewModel.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84640A622722DE4800FC7A72 /* SendRequest */ = {
+			isa = PBXGroup;
+			children = (
+				84640A462721641500FC7A72 /* SendRequestViewModel.swift */,
+			);
+			path = SendRequest;
+			sourceTree = "<group>";
+		};
+		84640A632722DE5200FC7A72 /* ServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84640A592722D8F600FC7A72 /* ServiceDetailsViewModel.swift */,
+			);
+			path = ServiceDetails;
 			sourceTree = "<group>";
 		};
 		847CA85A2713452300103602 /* Helpers */ = {
@@ -498,7 +556,7 @@
 		848AC453271EE1A20040B07C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				84640A4B2721ADB300FC7A72 /* SuccessView */,
+				84640A512722D87300FC7A72 /* ServiceDetails */,
 				848AC464271F14660040B07C /* Cells */,
 				84640A4A272172AC00FC7A72 /* ServiecsView */,
 				84640A3F2721592000FC7A72 /* SendRequestView */,
@@ -509,8 +567,9 @@
 		848AC458271EE1EB0040B07C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				848AC459271EE2020040B07C /* ServicesViewModel.swift */,
-				84640A462721641500FC7A72 /* SendRequestViewModel.swift */,
+				84640A632722DE5200FC7A72 /* ServiceDetails */,
+				84640A622722DE4800FC7A72 /* SendRequest */,
+				84640A612722DE3900FC7A72 /* Services */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -518,8 +577,9 @@
 		848AC45B271EE2240040B07C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				848AC45C271EE2400040B07C /* ServicesCoordinator.swift */,
-				84640A4827216CC800FC7A72 /* SendRequestCoordinator.swift */,
+				84640A602722DE2100FC7A72 /* ServiceDetails */,
+				84640A5F2722DE1600FC7A72 /* SendRequest */,
+				84640A5E2722DE0B00FC7A72 /* Services */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -663,6 +723,7 @@
 				847CA8C52715F09A00103602 /* Colors.xcassets in Resources */,
 				847CA8E12716BC4000103602 /* MainViewController.xib in Resources */,
 				847CA8D72715FC1300103602 /* HomeTabBarViewController.xib in Resources */,
+				84640A582722D8BC00FC7A72 /* ServiceDetailsViewController.xib in Resources */,
 				847CA8F82716CECE00103602 /* Tajawal-ExtraLight.ttf in Resources */,
 				8485C2C0271833700087A533 /* FilterCell.xib in Resources */,
 				847CA8F92716CECE00103602 /* Tajawal-Light.ttf in Resources */,
@@ -767,12 +828,15 @@
 				847CA87B2713454600103602 /* StartUpViewModel.swift in Sources */,
 				847CA8D22715F81D00103602 /* HomeViewModel.swift in Sources */,
 				847CA8FD2716D2BE00103602 /* HomeCell.swift in Sources */,
+				84640A5A2722D8F600FC7A72 /* ServiceDetailsViewModel.swift in Sources */,
 				8418EE7C271D60E80036F574 /* FilterValue.swift in Sources */,
+				84640A5C2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift in Sources */,
 				847CA8682713452300103602 /* BaseHeader.swift in Sources */,
 				8485C2C52718CEF70087A533 /* FilterHeaderView.swift in Sources */,
 				84640A452721632200FC7A72 /* SendRequestResponse.swift in Sources */,
 				847CA8D02715F80400103602 /* HomeCoordinator.swift in Sources */,
 				84CA36C72719AE43001FA7BB /* FilterRoomNumberCell.swift in Sources */,
+				84640A572722D8BC00FC7A72 /* ServiceDetailsViewController.swift in Sources */,
 				847CA8C72715F61B00103602 /* UIView+Extension.swift in Sources */,
 				847CA8852714710800103602 /* Project.swift in Sources */,
 				847CA8E42716BD0C00103602 /* MainViewModel.swift in Sources */,

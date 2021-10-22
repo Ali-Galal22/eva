@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 protocol ServiceCellDelegate: AnyObject {
-    func didClickReadMore()
+    func didClickReadMore(for cellIndex: Int)
     func didClickInteret(for cellIndex: Int)
 }
 class ServiceCell: UITableViewCell {
@@ -40,7 +40,9 @@ class ServiceCell: UITableViewCell {
 
     // MARK: - Actions
     @IBAction func buttonReadMoreClicked(_ sender: Any) {
-        
+        if let index = cellIndex {
+            delegate?.didClickReadMore(for: index)
+        }
     }
     @IBAction func buttonInterstClicked(_ sender: Any) {
         if let index = cellIndex {

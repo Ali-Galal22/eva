@@ -10,6 +10,7 @@ import Foundation
 
 protocol ServicesViewModelCoordinator {
     func navigateToInterst(service: Service)
+    func navigateToServiceDetails(service: Service)
 }
 
 protocol ServicesDelegate: AnyObject {
@@ -65,5 +66,12 @@ class ServicesViewModel {
         if let service = services?[index] {
             coordinator.navigateToInterst(service: service)
         }
+    }
+    
+    func navigateToServiceDetails(index: Int) {
+        if let service = services?[index] {
+            coordinator.navigateToServiceDetails(service: service)
+        }
+
     }
 }

@@ -79,8 +79,8 @@ extension ServicesViewController: ServiceCellDelegate {
         viewModel.navigateToInterst(index: cellIndex)
     }
     
-    func didClickReadMore() {
-        
+    func didClickReadMore(for cellIndex: Int) {
+        viewModel.navigateToServiceDetails(index: cellIndex)
     }
  
 }

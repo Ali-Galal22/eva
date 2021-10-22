@@ -57,7 +57,7 @@
                     </textAttributes>
                     <items>
                         <navigationItem title="نموذج الحجز والطلب" id="014-H1-S0a">
-                            <barButtonItem key="rightBarButtonItem" image="filter-back-icon" id="KAK-Y4-NPi">
+                            <barButtonItem key="leftBarButtonItem" image="filter-back-icon" id="KAK-Y4-NPi">
                                 <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="buttonBackDidClicked:" destination="-1" id="gcs-YU-Yo2"/>
@@ -409,7 +409,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" name="bg-color"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="1020" id="AQj-WG-q36"/>
                                 <constraint firstAttribute="trailing" secondItem="FfE-0v-5aX" secondAttribute="trailing" constant="16" id="EiK-8y-ZJf"/>
@@ -451,6 +451,9 @@
     </objects>
     <resources>
         <image name="filter-back-icon" width="10.5" height="17.5"/>
+        <namedColor name="bg-color">
+            <color red="0.92199999094009399" green="0.93300002813339233" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="eva-blue-color">
             <color red="0.17647058823529413" green="0.29019607843137257" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

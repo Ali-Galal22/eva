@@ -67,6 +67,11 @@ class SendRequestViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func buttonDetailsClicked(_ sender: Any) {
+        
+        let serviceDetailsViewModel = ServiceDetailsViewModel(service: viewModel.getService())
+        let serviceDetailsViewController = ServiceDetailsViewController(viewModel: serviceDetailsViewModel)
+        serviceDetailsViewController.modalPresentationStyle = .fullScreen
+        self.present(serviceDetailsViewController, animated: true, completion: nil)
     }
     
     @IBAction func buttonSendRequestClicked(_ sender: Any) {
@@ -142,7 +147,6 @@ extension SendRequestViewController: SendRequestDelegate {
             self.dismiss(animated: true) {
                 self.viewModel.showSuccessView()
             }
-//            viewModel.showSuccessView()
         case .error:
             activityIndicator.stopAnimating()
             break

@@ -58,6 +58,10 @@ class SendRequestViewModel {
     func getServiceContent() -> String {
         return service.content ?? ""
     }
+    
+    func getService() -> Service {
+        return service
+    }
 
     // Form Setters
     func setName(name: String) {
@@ -140,5 +144,4 @@ class SendRequestViewModel {
     func showSuccessView() {
         self.coordinator.showSuccessView()
     }
-
 }

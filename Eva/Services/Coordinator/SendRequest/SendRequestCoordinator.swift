@@ -21,9 +21,7 @@ extension SendRequestCoordinator: SendRequestViewModelCoordinator {
     func showSuccessView() {
         let successViewController = SuccessViewController()
         successViewController.modalPresentationStyle = .overFullScreen
-
         self.navigationController.present(successViewController, animated: true, completion: nil)
     }
-    
     
 }
