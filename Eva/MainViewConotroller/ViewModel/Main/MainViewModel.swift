@@ -8,6 +8,8 @@
 
 import Foundation
 protocol MainViewModelCoordinator {
+    func navigateToProjectDetails(projectId: Int)
+    func navigateToServiceDetails(service: Service)
 }
 protocol MainListDelegate: AnyObject {
     func onStateChanged(state: LoadingState)
@@ -152,6 +154,19 @@ class MainViewModel {
         }
     }
     
+    
+    func navigateToProjectDetails(index: Int) {
+        if let projectId = getProject(index: index)?.ID {
+            coordinator.navigateToProjectDetails(projectId: projectId)
+        }
+    }
+    
+    func navigateToServiecDetails(index: Int) {
+        if let service = getService(index: index) {
+            coordinator.navigateToServiceDetails(service: service)
+        }
+    }
+
 }
 
 

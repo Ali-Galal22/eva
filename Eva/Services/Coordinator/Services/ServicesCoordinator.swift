@@ -23,7 +23,7 @@ extension ServicesCoordinator: ServicesViewModelCoordinator {
     
     func navigateToInterst(service: Service) {
         let sendRequestCoordinator = SendRequestCoordinator(navigationController: self.navigationController!)
-        let sendRequestViewModel = SendRequestViewModel(coordinator: sendRequestCoordinator, service: service)
+        let sendRequestViewModel = SendRequestViewModel(coordinator: sendRequestCoordinator, service: service, project: nil, requestType: .service)
         let sendRequestViewController = SendRequestViewController(viewModel: sendRequestViewModel)
         sendRequestViewController.modalPresentationStyle = .fullScreen
         navigationController?.present(sendRequestViewController, animated: true, completion: nil)

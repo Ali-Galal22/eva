@@ -16,5 +16,14 @@ struct Constants {
         static let FilterButtonCell = "FilterButtonCell"
         static let ServiceCell = "ServiceCell"
         
+        
+        static let ProjectDetailsMainImageCell = "ProjectDetailsMainImageCell"
+        static let ImageGallaryCell = "ImageGallaryCell"
+        static let ProjectInfoCell = "ProjectInfoCell"
+        static let MapCell = "MapCell"
+        static let ProjectDetailsCell = "ProjectDetailsCell"
+        static let ProjectFeatureCell = "ProjectFeatureCell"
+        static let ProjectBenifitsCell = "ProjectBenifitsCell"
+        
     }
 }

@@ -59,6 +59,10 @@ class SendRequestViewController: UIViewController {
         
         labelServiceName.text = viewModel.getServiceTitle()
         labelServiceDetails.text = viewModel.getServiceContent()
+        
+        if viewModel.getRequestType() == .project {
+            self.buttonServiceDetails.isHidden = true
+        }
     }
 
     
@@ -68,10 +72,12 @@ class SendRequestViewController: UIViewController {
     }
     @IBAction func buttonDetailsClicked(_ sender: Any) {
         
-        let serviceDetailsViewModel = ServiceDetailsViewModel(service: viewModel.getService())
-        let serviceDetailsViewController = ServiceDetailsViewController(viewModel: serviceDetailsViewModel)
-        serviceDetailsViewController.modalPresentationStyle = .fullScreen
-        self.present(serviceDetailsViewController, animated: true, completion: nil)
+        if let service = viewModel.getService() {
+            let serviceDetailsViewModel = ServiceDetailsViewModel(service: service)
+            let serviceDetailsViewController = ServiceDetailsViewController(viewModel: serviceDetailsViewModel)
+            serviceDetailsViewController.modalPresentationStyle = .fullScreen
+            self.present(serviceDetailsViewController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func buttonSendRequestClicked(_ sender: Any) {

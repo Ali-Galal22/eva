@@ -42,7 +42,8 @@ class HomeCoordinator {
         let mainNavigationController = UINavigationController(rootViewController: mainViewController)
         mainNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         mainNavigationController.navigationBar.titleTextAttributes = textAttributes
-
+        mainCoordinator.setNavigationController(navigationController: mainNavigationController)
+        
         let filter = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(navigateToFilter))
         mainNavigationController.navigationBar.topItem?.rightBarButtonItem = filter
 

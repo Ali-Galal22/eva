@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8418EE7C271D60E80036F574 /* FilterValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418EE7B271D60E80036F574 /* FilterValue.swift */; };
+		8423A4702726B67600D1F126 /* ImageGallaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A46E2726B67600D1F126 /* ImageGallaryCell.swift */; };
+		8423A4712726B67600D1F126 /* ImageGallaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423A46F2726B67600D1F126 /* ImageGallaryCell.xib */; };
+		8423A47E2727F36F00D1F126 /* ProjectInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A47C2727F36E00D1F126 /* ProjectInfoCell.swift */; };
+		8423A47F2727F36F00D1F126 /* ProjectInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423A47D2727F36E00D1F126 /* ProjectInfoCell.xib */; };
 		84640A3C2720951F00FC7A72 /* SendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A3A2720951F00FC7A72 /* SendRequestViewController.swift */; };
 		84640A3D2720951F00FC7A72 /* SendRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A3B2720951F00FC7A72 /* SendRequestViewController.xib */; };
 		84640A432721596000FC7A72 /* SendRequestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A422721596000FC7A72 /* SendRequestRequest.swift */; };
@@ -20,6 +24,13 @@
 		84640A582722D8BC00FC7A72 /* ServiceDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A562722D8BB00FC7A72 /* ServiceDetailsViewController.xib */; };
 		84640A5A2722D8F600FC7A72 /* ServiceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A592722D8F600FC7A72 /* ServiceDetailsViewModel.swift */; };
 		84640A5C2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A5B2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift */; };
+		84640A682724A98500FC7A72 /* ProjectsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A662724A98500FC7A72 /* ProjectsDetailsViewController.swift */; };
+		84640A692724A98500FC7A72 /* ProjectsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A672724A98500FC7A72 /* ProjectsDetailsViewController.xib */; };
+		84640A6C2724A9C500FC7A72 /* ProjectsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A6B2724A9C500FC7A72 /* ProjectsDetailsViewModel.swift */; };
+		84640A6F2724A9F200FC7A72 /* ProjectsDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A6E2724A9F200FC7A72 /* ProjectsDetailsCoordinator.swift */; };
+		84640A732724AA8100FC7A72 /* ProjectDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A722724AA8100FC7A72 /* ProjectDetails.swift */; };
+		84640A772725511600FC7A72 /* ProjectDetailsMainImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A752725511600FC7A72 /* ProjectDetailsMainImageCell.swift */; };
+		84640A782725511600FC7A72 /* ProjectDetailsMainImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A762725511600FC7A72 /* ProjectDetailsMainImageCell.xib */; };
 		847CA8642713452300103602 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85C2713452300103602 /* LoadingState.swift */; };
 		847CA8652713452300103602 /* RequestParamters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85E2713452300103602 /* RequestParamters.swift */; };
 		847CA8662713452300103602 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA85F2713452300103602 /* BaseRequest.swift */; };
@@ -75,6 +86,14 @@
 		849C541527134445000F1720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C541427134445000F1720 /* SceneDelegate.swift */; };
 		849C541C27134447000F1720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849C541B27134447000F1720 /* Assets.xcassets */; };
 		849C541F27134447000F1720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C541D27134447000F1720 /* LaunchScreen.storyboard */; };
+		84A7697227285AD600A579CA /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7697027285AD600A579CA /* MapCell.swift */; };
+		84A7697327285AD600A579CA /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7697127285AD600A579CA /* MapCell.xib */; };
+		84A769772728625E00A579CA /* ProjectDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A769752728625E00A579CA /* ProjectDetailsCell.swift */; };
+		84A769782728625E00A579CA /* ProjectDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A769762728625E00A579CA /* ProjectDetailsCell.xib */; };
+		84A7697C272887A000A579CA /* ProjectFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7697A272887A000A579CA /* ProjectFeatureCell.swift */; };
+		84A7697D272887A000A579CA /* ProjectFeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7697B272887A000A579CA /* ProjectFeatureCell.xib */; };
+		84B1FD23272A8A5300406102 /* ProjectBenifitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1FD21272A8A5300406102 /* ProjectBenifitsCell.swift */; };
+		84B1FD24272A8A5300406102 /* ProjectBenifitsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B1FD22272A8A5300406102 /* ProjectBenifitsCell.xib */; };
 		84CA36C72719AE43001FA7BB /* FilterRoomNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA36C52719AE43001FA7BB /* FilterRoomNumberCell.swift */; };
 		84CA36C82719AE43001FA7BB /* FilterRoomNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CA36C62719AE43001FA7BB /* FilterRoomNumberCell.xib */; };
 		84EA2008271C27A500F2E859 /* FilterButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA2006271C27A500F2E859 /* FilterButtonCell.swift */; };
@@ -86,6 +105,10 @@
 		0F948D32A2C0FD4ADC8E7B3A /* Pods-Eva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.debug.xcconfig"; path = "Target Support Files/Pods-Eva/Pods-Eva.debug.xcconfig"; sourceTree = "<group>"; };
 		59B3E9AA04CD449525181ECE /* Pods-Eva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.release.xcconfig"; path = "Target Support Files/Pods-Eva/Pods-Eva.release.xcconfig"; sourceTree = "<group>"; };
 		8418EE7B271D60E80036F574 /* FilterValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterValue.swift; sourceTree = "<group>"; };
+		8423A46E2726B67600D1F126 /* ImageGallaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallaryCell.swift; sourceTree = "<group>"; };
+		8423A46F2726B67600D1F126 /* ImageGallaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGallaryCell.xib; sourceTree = "<group>"; };
+		8423A47C2727F36E00D1F126 /* ProjectInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInfoCell.swift; sourceTree = "<group>"; };
+		8423A47D2727F36E00D1F126 /* ProjectInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectInfoCell.xib; sourceTree = "<group>"; };
 		84640A3A2720951F00FC7A72 /* SendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestViewController.swift; sourceTree = "<group>"; };
 		84640A3B2720951F00FC7A72 /* SendRequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendRequestViewController.xib; sourceTree = "<group>"; };
 		84640A422721596000FC7A72 /* SendRequestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestRequest.swift; sourceTree = "<group>"; };
@@ -98,6 +121,13 @@
 		84640A562722D8BB00FC7A72 /* ServiceDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailsViewController.xib; sourceTree = "<group>"; };
 		84640A592722D8F600FC7A72 /* ServiceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewModel.swift; sourceTree = "<group>"; };
 		84640A5B2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsCoordinator.swift; sourceTree = "<group>"; };
+		84640A662724A98500FC7A72 /* ProjectsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsDetailsViewController.swift; sourceTree = "<group>"; };
+		84640A672724A98500FC7A72 /* ProjectsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectsDetailsViewController.xib; sourceTree = "<group>"; };
+		84640A6B2724A9C500FC7A72 /* ProjectsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsDetailsViewModel.swift; sourceTree = "<group>"; };
+		84640A6E2724A9F200FC7A72 /* ProjectsDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsDetailsCoordinator.swift; sourceTree = "<group>"; };
+		84640A722724AA8100FC7A72 /* ProjectDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetails.swift; sourceTree = "<group>"; };
+		84640A752725511600FC7A72 /* ProjectDetailsMainImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsMainImageCell.swift; sourceTree = "<group>"; };
+		84640A762725511600FC7A72 /* ProjectDetailsMainImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDetailsMainImageCell.xib; sourceTree = "<group>"; };
 		847CA85C2713452300103602 /* LoadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		847CA85E2713452300103602 /* RequestParamters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParamters.swift; sourceTree = "<group>"; };
 		847CA85F2713452300103602 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
@@ -155,7 +185,15 @@
 		849C541B27134447000F1720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849C541E27134447000F1720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849C542027134447000F1720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A7697027285AD600A579CA /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		84A7697127285AD600A579CA /* MapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		84A769752728625E00A579CA /* ProjectDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsCell.swift; sourceTree = "<group>"; };
+		84A769762728625E00A579CA /* ProjectDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDetailsCell.xib; sourceTree = "<group>"; };
+		84A7697A272887A000A579CA /* ProjectFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFeatureCell.swift; sourceTree = "<group>"; };
+		84A7697B272887A000A579CA /* ProjectFeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectFeatureCell.xib; sourceTree = "<group>"; };
 		84ABD6509277B425FE5EFB17 /* Pods_Eva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B1FD21272A8A5300406102 /* ProjectBenifitsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectBenifitsCell.swift; sourceTree = "<group>"; };
+		84B1FD22272A8A5300406102 /* ProjectBenifitsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectBenifitsCell.xib; sourceTree = "<group>"; };
 		84CA36C52719AE43001FA7BB /* FilterRoomNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRoomNumberCell.swift; sourceTree = "<group>"; };
 		84CA36C62719AE43001FA7BB /* FilterRoomNumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterRoomNumberCell.xib; sourceTree = "<group>"; };
 		84EA2006271C27A500F2E859 /* FilterButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonCell.swift; sourceTree = "<group>"; };
@@ -180,6 +218,24 @@
 				84ABD6509277B425FE5EFB17 /* Pods_Eva.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8423A46D2726B63400D1F126 /* ImageGallaryCell */ = {
+			isa = PBXGroup;
+			children = (
+				8423A46E2726B67600D1F126 /* ImageGallaryCell.swift */,
+				8423A46F2726B67600D1F126 /* ImageGallaryCell.xib */,
+			);
+			path = ImageGallaryCell;
+			sourceTree = "<group>";
+		};
+		8423A47B2727F34200D1F126 /* ProjectInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				8423A47C2727F36E00D1F126 /* ProjectInfoCell.swift */,
+				8423A47D2727F36E00D1F126 /* ProjectInfoCell.xib */,
+			);
+			path = ProjectInfoCell;
 			sourceTree = "<group>";
 		};
 		84640A3F2721592000FC7A72 /* SendRequestView */ = {
@@ -281,6 +337,65 @@
 				84640A592722D8F600FC7A72 /* ServiceDetailsViewModel.swift */,
 			);
 			path = ServiceDetails;
+			sourceTree = "<group>";
+		};
+		84640A642724A90100FC7A72 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				847CA8DE2716BC4000103602 /* MainViewController.swift */,
+				847CA8DF2716BC4000103602 /* MainViewController.xib */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		84640A652724A94F00FC7A72 /* ProjectsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84640A662724A98500FC7A72 /* ProjectsDetailsViewController.swift */,
+				84640A672724A98500FC7A72 /* ProjectsDetailsViewController.xib */,
+			);
+			path = ProjectsDetails;
+			sourceTree = "<group>";
+		};
+		84640A6A2724A99A00FC7A72 /* ProjectsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84640A6B2724A9C500FC7A72 /* ProjectsDetailsViewModel.swift */,
+			);
+			path = ProjectsDetails;
+			sourceTree = "<group>";
+		};
+		84640A6D2724A9DC00FC7A72 /* ProjectsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84640A6E2724A9F200FC7A72 /* ProjectsDetailsCoordinator.swift */,
+			);
+			path = ProjectsDetails;
+			sourceTree = "<group>";
+		};
+		84640A702724AA0900FC7A72 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				847CA8E52716BD9D00103602 /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84640A712724AA1700FC7A72 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				847CA8E32716BD0C00103602 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84640A742725347200FC7A72 /* ProjectDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84640A752725511600FC7A72 /* ProjectDetailsMainImageCell.swift */,
+				84640A762725511600FC7A72 /* ProjectDetailsMainImageCell.xib */,
+			);
+			path = ProjectDetails;
 			sourceTree = "<group>";
 		};
 		847CA85A2713452300103602 /* Helpers */ = {
@@ -454,7 +569,8 @@
 		847CA8DA2716BBF800103602 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				847CA8E52716BD9D00103602 /* MainCoordinator.swift */,
+				84640A702724AA0900FC7A72 /* Main */,
+				84640A6D2724A9DC00FC7A72 /* ProjectsDetails */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -462,7 +578,8 @@
 		847CA8DB2716BC0600103602 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				847CA8E32716BD0C00103602 /* MainViewModel.swift */,
+				84640A712724AA1700FC7A72 /* Main */,
+				84640A6A2724A99A00FC7A72 /* ProjectsDetails */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -470,10 +587,10 @@
 		847CA8DC2716BC1300103602 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84640A652724A94F00FC7A72 /* ProjectsDetails */,
+				84640A642724A90100FC7A72 /* MainView */,
 				8485C2B727182A8C0087A533 /* Filter */,
 				847CA8FA2716D22700103602 /* Cells */,
-				847CA8DE2716BC4000103602 /* MainViewController.swift */,
-				847CA8DF2716BC4000103602 /* MainViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -484,6 +601,7 @@
 				847CA8E72716C4C200103602 /* HomeListResponse.swift */,
 				847CA8E92716C4D200103602 /* Service.swift */,
 				8418EE7B271D60E80036F574 /* FilterValue.swift */,
+				84640A722724AA8100FC7A72 /* ProjectDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -505,6 +623,13 @@
 		847CA8FA2716D22700103602 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				84B1FD20272A8A1100406102 /* ProjectBenifitsCell */,
+				84A769792728878500A579CA /* ProjectFeatureCell */,
+				84A769742728624400A579CA /* ProjectDetailsCell */,
+				84A7696F27285AB200A579CA /* MapCell */,
+				8423A47B2727F34200D1F126 /* ProjectInfoCell */,
+				8423A46D2726B63400D1F126 /* ImageGallaryCell */,
+				84640A742725347200FC7A72 /* ProjectDetails */,
 				847CA8FB2716D2BE00103602 /* HomeCell.swift */,
 				847CA8FC2716D2BE00103602 /* HomeCell.xib */,
 			);
@@ -630,6 +755,42 @@
 			path = Eva;
 			sourceTree = "<group>";
 		};
+		84A7696F27285AB200A579CA /* MapCell */ = {
+			isa = PBXGroup;
+			children = (
+				84A7697027285AD600A579CA /* MapCell.swift */,
+				84A7697127285AD600A579CA /* MapCell.xib */,
+			);
+			path = MapCell;
+			sourceTree = "<group>";
+		};
+		84A769742728624400A579CA /* ProjectDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				84A769752728625E00A579CA /* ProjectDetailsCell.swift */,
+				84A769762728625E00A579CA /* ProjectDetailsCell.xib */,
+			);
+			path = ProjectDetailsCell;
+			sourceTree = "<group>";
+		};
+		84A769792728878500A579CA /* ProjectFeatureCell */ = {
+			isa = PBXGroup;
+			children = (
+				84A7697A272887A000A579CA /* ProjectFeatureCell.swift */,
+				84A7697B272887A000A579CA /* ProjectFeatureCell.xib */,
+			);
+			path = ProjectFeatureCell;
+			sourceTree = "<group>";
+		};
+		84B1FD20272A8A1100406102 /* ProjectBenifitsCell */ = {
+			isa = PBXGroup;
+			children = (
+				84B1FD21272A8A5300406102 /* ProjectBenifitsCell.swift */,
+				84B1FD22272A8A5300406102 /* ProjectBenifitsCell.xib */,
+			);
+			path = ProjectBenifitsCell;
+			sourceTree = "<group>";
+		};
 		84CA36C42719AE18001FA7BB /* RoomNumberFilterCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,6 +888,7 @@
 				847CA8F82716CECE00103602 /* Tajawal-ExtraLight.ttf in Resources */,
 				8485C2C0271833700087A533 /* FilterCell.xib in Resources */,
 				847CA8F92716CECE00103602 /* Tajawal-Light.ttf in Resources */,
+				84A7697327285AD600A579CA /* MapCell.xib in Resources */,
 				847CA87E2713454600103602 /* StartUpViewController.xib in Resources */,
 				848AC457271EE1CF0040B07C /* ServicesViewController.xib in Resources */,
 				847CA8F32716CECE00103602 /* Tajawal-Medium.ttf in Resources */,
@@ -734,13 +896,20 @@
 				84CA36C82719AE43001FA7BB /* FilterRoomNumberCell.xib in Resources */,
 				847CA8F62716CECE00103602 /* Tajawal-Regular.ttf in Resources */,
 				8485C2BB27182AAB0087A533 /* FilterViewController.xib in Resources */,
+				84640A782725511600FC7A72 /* ProjectDetailsMainImageCell.xib in Resources */,
+				84B1FD24272A8A5300406102 /* ProjectBenifitsCell.xib in Resources */,
 				847CA8F72716CECE00103602 /* Tajawal-ExtraBold.ttf in Resources */,
+				8423A47F2727F36F00D1F126 /* ProjectInfoCell.xib in Resources */,
 				848AC468271F14950040B07C /* ServiceCell.xib in Resources */,
+				84A769782728625E00A579CA /* ProjectDetailsCell.xib in Resources */,
+				84640A692724A98500FC7A72 /* ProjectsDetailsViewController.xib in Resources */,
 				847CA8F52716CECE00103602 /* Tajawal-Black.ttf in Resources */,
 				847CA8F42716CECE00103602 /* Tajawal-Bold.ttf in Resources */,
 				84640A502721E50A00FC7A72 /* SuccessViewController.xib in Resources */,
 				84640A3D2720951F00FC7A72 /* SendRequestViewController.xib in Resources */,
+				84A7697D272887A000A579CA /* ProjectFeatureCell.xib in Resources */,
 				849C541C27134447000F1720 /* Assets.xcassets in Resources */,
+				8423A4712726B67600D1F126 /* ImageGallaryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,8 +966,11 @@
 				84EA2008271C27A500F2E859 /* FilterButtonCell.swift in Sources */,
 				84640A4927216CC800FC7A72 /* SendRequestCoordinator.swift in Sources */,
 				847CA8E02716BC4000103602 /* MainViewController.swift in Sources */,
+				84640A772725511600FC7A72 /* ProjectDetailsMainImageCell.swift in Sources */,
+				84640A682724A98500FC7A72 /* ProjectsDetailsViewController.swift in Sources */,
 				84640A432721596000FC7A72 /* SendRequestRequest.swift in Sources */,
 				847CA8792713454600103602 /* APIRouter.swift in Sources */,
+				84640A6C2724A9C500FC7A72 /* ProjectsDetailsViewModel.swift in Sources */,
 				847CA8642713452300103602 /* LoadingState.swift in Sources */,
 				847CA8772713454600103602 /* WebServiecs.swift in Sources */,
 				848AC456271EE1CF0040B07C /* ServicesViewController.swift in Sources */,
@@ -815,12 +987,15 @@
 				847CA87D2713454600103602 /* StartUpViewController.swift in Sources */,
 				847CA87A2713454600103602 /* APIClient+Extension.swift in Sources */,
 				847CA8D62715FC1300103602 /* HomeTabBarViewController.swift in Sources */,
+				84B1FD23272A8A5300406102 /* ProjectBenifitsCell.swift in Sources */,
 				847CA8E62716BD9D00103602 /* MainCoordinator.swift in Sources */,
 				847CA8E82716C4C200103602 /* HomeListResponse.swift in Sources */,
 				8485C2BA27182AAB0087A533 /* FilterViewController.swift in Sources */,
 				847CA8672713452300103602 /* BaseResponse.swift in Sources */,
 				848AC45D271EE2400040B07C /* ServicesCoordinator.swift in Sources */,
+				84A7697C272887A000A579CA /* ProjectFeatureCell.swift in Sources */,
 				847CA8692713452300103602 /* Keychain.swift in Sources */,
+				8423A47E2727F36F00D1F126 /* ProjectInfoCell.swift in Sources */,
 				84640A4F2721E50A00FC7A72 /* SuccessViewController.swift in Sources */,
 				8485C2BF271833700087A533 /* FilterCell.swift in Sources */,
 				849C541327134445000F1720 /* AppDelegate.swift in Sources */,
@@ -830,16 +1005,21 @@
 				847CA8FD2716D2BE00103602 /* HomeCell.swift in Sources */,
 				84640A5A2722D8F600FC7A72 /* ServiceDetailsViewModel.swift in Sources */,
 				8418EE7C271D60E80036F574 /* FilterValue.swift in Sources */,
+				8423A4702726B67600D1F126 /* ImageGallaryCell.swift in Sources */,
 				84640A5C2722D90D00FC7A72 /* ServiceDetailsCoordinator.swift in Sources */,
 				847CA8682713452300103602 /* BaseHeader.swift in Sources */,
+				84640A6F2724A9F200FC7A72 /* ProjectsDetailsCoordinator.swift in Sources */,
 				8485C2C52718CEF70087A533 /* FilterHeaderView.swift in Sources */,
 				84640A452721632200FC7A72 /* SendRequestResponse.swift in Sources */,
+				84640A732724AA8100FC7A72 /* ProjectDetails.swift in Sources */,
 				847CA8D02715F80400103602 /* HomeCoordinator.swift in Sources */,
 				84CA36C72719AE43001FA7BB /* FilterRoomNumberCell.swift in Sources */,
 				84640A572722D8BC00FC7A72 /* ServiceDetailsViewController.swift in Sources */,
 				847CA8C72715F61B00103602 /* UIView+Extension.swift in Sources */,
+				84A769772728625E00A579CA /* ProjectDetailsCell.swift in Sources */,
 				847CA8852714710800103602 /* Project.swift in Sources */,
 				847CA8E42716BD0C00103602 /* MainViewModel.swift in Sources */,
+				84A7697227285AD600A579CA /* MapCell.swift in Sources */,
 				84640A472721641500FC7A72 /* SendRequestViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

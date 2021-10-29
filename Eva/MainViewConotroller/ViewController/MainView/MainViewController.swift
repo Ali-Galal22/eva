@@ -103,6 +103,17 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         footerView.backgroundColor = #colorLiteral(red: 0.9215686275, green: 0.9333333333, blue: 0.9490196078, alpha: 1)
         return footerView
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            viewModel.navigateToProjectDetails(index: indexPath.row)
+        case 1:
+            viewModel.navigateToServiecDetails(index: indexPath.row)
+        default:
+            break
+        }
+    }
 }
 
 

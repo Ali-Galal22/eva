@@ -32,14 +32,12 @@ extension APIClient {
     static func sendRequest(parameters: SendRequestRequest, completion: @escaping (Result<BaseResponse<SendRequestResponse>, AFError>) -> Void) {
         performRequest(route: APIRouter.sendRequest(queryParameters: parameters), completion: completion)
     }
-}
-class AuthenticationAPI: APIClient {
-//    static func generateToken(completion: @escaping (Result<BaseResponse<TokenInfo>, AFError>) -> Void) {
-//        performRequest(route: APIRouter.generateToken, completion: completion)
-//    }
-//    
-//    static func login(loginModel: BaseRequest<LoginRequest>, completion: @escaping (Result<BaseResponse<TokenInfo>, AFError>) -> Void) {
-//        performRequest(route: APIRouter.login(userLogin: loginModel), completion: completion)
-//    }
-}
+    
+    
+    static func getProjectDetails(parameters: [String: String], completion: @escaping (Result<BaseResponse<ProjectDetails>, AFError>) -> Void) {
+        performRequest(route: APIRouter.getProjectDetails(queryParameters: parameters), completion: completion)
+    }
 
+    
+    
+}

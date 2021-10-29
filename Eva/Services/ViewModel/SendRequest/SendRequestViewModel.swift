@@ -7,6 +7,11 @@
 //
 
 import Foundation
+
+enum RequstType {
+    case service
+    case project
+}
 protocol SendRequestDelegate: AnyObject {
     func onStateChanged(state: LoadingState)
     func showNameError(_ show: Bool, error: String)
@@ -21,7 +26,9 @@ protocol SendRequestViewModelCoordinator: AnyObject {
 class SendRequestViewModel {
     private let coordinator: SendRequestViewModelCoordinator
     private unowned var delegate: SendRequestDelegate?
-    private let service: Service
+    private let service: Service?
+    private let project: Project?
+    private let requestType: RequstType
     var isValidForm = true
     
     private var name: String?
@@ -38,29 +45,54 @@ class SendRequestViewModel {
 
     // MARK: - Initializer
 
-    init(coordinator: SendRequestViewModelCoordinator, service: Service) {
+    init(coordinator: SendRequestViewModelCoordinator, service: Service?, project: Project?, requestType: RequstType) {
         self.coordinator = coordinator
         self.service = service
+        self.project = project
+        self.requestType = requestType
     }
-
+    
     func configure(with delegate: SendRequestDelegate) {
         self.delegate = delegate
     }
     
+    func getRequestType() -> RequstType {
+        return requestType
+    }
+    
     func getServiceImageUrl() -> String {
-        return service.image ?? ""
+        switch requestType {
+        case .project:
+            return project?.image ?? ""
+        case .service:
+            return service?.image ?? ""
+        }
     }
     
     func getServiceTitle() -> String {
-        return service.title ?? ""
+        switch requestType {
+        case .project:
+            return project?.title ?? ""
+        case .service:
+            return service?.title ?? ""
+        }
     }
 
     func getServiceContent() -> String {
-        return service.content ?? ""
+        switch requestType {
+        case .project:
+            return project?.content ?? ""
+        case .service:
+            return service?.content ?? ""
+        }
     }
     
-    func getService() -> Service {
+    func getService() -> Service? {
         return service
+    }
+    
+    func getProject() -> Project? {
+        return project
     }
 
     // Form Setters
