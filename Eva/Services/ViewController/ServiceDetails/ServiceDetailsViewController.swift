@@ -35,10 +35,8 @@ class ServiceDetailsViewController: UIViewController {
         if let imageURL = URL(string: viewModel.getServiceImageUrl()) {
             self.imageViewService.kf.setImage(with: imageURL)
         }
-        
         labelTitle.text = viewModel.getServiceTitle()
         labelContent.text = viewModel.getServiceContent()
-
     }
     
     // MARK: - Actions

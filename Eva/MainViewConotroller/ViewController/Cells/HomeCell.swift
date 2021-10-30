@@ -10,10 +10,11 @@ import UIKit
 import Kingfisher
 
 protocol HomeCellDelegate: AnyObject {
-    func didClickDetails()
+    func didClickDetails(index: IndexPath)
 }
 class HomeCell: UITableViewCell {
 
+    var cellIndex: IndexPath?
     // MARK: - Outlets
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
@@ -45,6 +46,6 @@ class HomeCell: UITableViewCell {
 
     // MARK: - Actions
     @IBAction func buttonDetailsClicked(_ sender: Any) {
-        delegate?.didClickDetails()
+        delegate?.didClickDetails(index: cellIndex!)
     }
 }

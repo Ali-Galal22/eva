@@ -72,6 +72,5 @@ class ServicesViewModel {
         if let service = services?[index] {
             coordinator.navigateToServiceDetails(service: service)
         }
-
     }
 }

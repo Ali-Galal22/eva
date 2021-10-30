@@ -80,6 +80,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let homeCell = tableView.dequeueReusableCell(withIdentifier: "\(HomeCell.self)") as? HomeCell
+        homeCell?.cellIndex = indexPath
         switch indexPath.section {
         case 0:
             homeCell?.configureProjectCell(with: self, and: viewModel.getProject(index: indexPath.row))
@@ -136,7 +137,15 @@ extension MainViewController: MainListDelegate {
 }
 
 extension MainViewController: HomeCellDelegate {
-    func didClickDetails() {
-        
+    func didClickDetails(index: IndexPath) {
+        switch index.section {
+        case 0:
+            viewModel.navigateToProjectDetails(index: index.row)
+        case 1:
+            viewModel.navigateToServiecDetails(index: index.row)
+        default:
+            break
+        }
+
     }
 }

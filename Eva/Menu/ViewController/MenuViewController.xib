@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Eva" customModuleProvider="target">
+            <connections>
+                <outlet property="tableview" destination="CFe-Ja-7yY" id="V5e-xl-MYq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eva-dark-logo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39N-wb-e01">
+                    <rect key="frame" x="16" y="60" width="78" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="Hw6-oH-Un2"/>
+                        <constraint firstAttribute="height" constant="82" id="vlm-ry-OsQ"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CFe-Ja-7yY">
+                    <rect key="frame" x="0.0" y="202" width="414" height="660"/>
+                    <color key="backgroundColor" red="0.035294117649999998" green="0.070588235289999995" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8ri-Ti-h8a"/>
+                        <outlet property="delegate" destination="-1" id="R05-UX-k0Z"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.070588235294117646" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CFe-Ja-7yY" secondAttribute="trailing" id="4zg-Lf-7ox"/>
+                <constraint firstItem="CFe-Ja-7yY" firstAttribute="top" secondItem="39N-wb-e01" secondAttribute="bottom" constant="60" id="Bf1-BS-hIj"/>
+                <constraint firstItem="39N-wb-e01" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="FfA-dU-De6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CFe-Ja-7yY" secondAttribute="bottom" id="TzE-B5-9mD"/>
+                <constraint firstItem="39N-wb-e01" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aff-Xs-NdP"/>
+                <constraint firstItem="CFe-Ja-7yY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qRh-be-FQ9"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eva-dark-logo" width="78" height="82.5"/>
+    </resources>
+</document>

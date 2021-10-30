@@ -26,9 +26,8 @@ class ProjectDetailsCell: UITableViewCell {
     
     
     func configureCell(startDate: String, endDate: String, projectStatus: String, projectLocation: String, projectType: String) {
-        
-        labelStartDateValue.text = startDate
-        labelEndDateValue.text = endDate
+        labelStartDateValue.text = startDate.formate(from: "yyyyMMdd", to: "dd / MM / yyyy")
+        labelEndDateValue.text = endDate.formate(from: "yyyyMMdd", to: "dd / MM / yyyy")
         labelProjectStatusValue.text = projectStatus
         labelProjectLocationValue.text = projectLocation
         labelProjectTypeValue.text = projectType
@@ -40,4 +39,16 @@ class ProjectDetailsCell: UITableViewCell {
         // Initialization code
     }
     
+}
+
+extension String {
+    func formate(from: String, to: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = from
+        if let date = dateFormatter.date(from: self) {
+            dateFormatter.dateFormat = to
+            return dateFormatter.string(from: date)
+        }
+        return ""
+    }
 }

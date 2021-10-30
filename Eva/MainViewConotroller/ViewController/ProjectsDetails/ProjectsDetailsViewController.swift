@@ -59,9 +59,7 @@ extension ProjectsDetailsViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch viewModel.getCells()[section] {
-        case .gallary, .projectInfo, .map, .projectDetails, .features:
-            return 1
-        case .benifits:
+        case .gallary, .projectInfo, .map, .projectDetails, .features, .benifits:
             return 1
         }
     }
@@ -134,6 +132,34 @@ extension ProjectsDetailsViewController: UITableViewDelegate, UITableViewDataSou
             }
         default: return UITableView.automaticDimension
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch viewModel.getCells()[section] {
+        case .features, .benifits:
+            return 8
+        default: return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        switch viewModel.getCells()[section] {
+        case .benifits:
+            return 16
+        default: return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 8))
+        footerView.backgroundColor = #colorLiteral(red: 0.9215686275, green: 0.9333333333, blue: 0.9490196078, alpha: 1)
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 16))
+        footerView.backgroundColor = #colorLiteral(red: 0.9215686275, green: 0.9333333333, blue: 0.9490196078, alpha: 1)
+        return footerView
     }
 }
 

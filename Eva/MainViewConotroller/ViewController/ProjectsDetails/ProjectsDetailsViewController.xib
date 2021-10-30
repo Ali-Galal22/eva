@@ -23,6 +23,7 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7vH-J8-kHU">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" name="bg-color"/>
+                    <color key="sectionIndexBackgroundColor" name="bg-color"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="foj-lJ-8i8"/>
                         <outlet property="delegate" destination="-1" id="RmP-E9-dhz"/>

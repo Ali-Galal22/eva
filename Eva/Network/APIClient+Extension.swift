@@ -38,6 +38,9 @@ extension APIClient {
         performRequest(route: APIRouter.getProjectDetails(queryParameters: parameters), completion: completion)
     }
 
-    
+    static func getGetOurPartners(parameters: [String: String], completion: @escaping (Result<BaseResponse<OurPartnersResponse>, AFError>) -> Void) {
+        performRequest(route: APIRouter.getOurPartners(queryParameters: parameters), completion: completion)
+    }
+
     
 }

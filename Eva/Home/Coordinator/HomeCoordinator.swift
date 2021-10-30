@@ -15,14 +15,15 @@ class HomeCoordinator {
     private lazy var mainViewModel = MainViewModel(coordinator: mainCoordinator)
 
     let servicesCoordinator = ServicesCoordinator()
-
+    let menuCoordinator = MenuCoordinator()
+    
     init(navigationCoontroller: UINavigationController) {
         self.navigationCoontroller = navigationCoontroller
-        self.navigationCoontroller.navigationBar.isHidden = false
-        self.navigationCoontroller.navigationBar.backgroundColor = #colorLiteral(red: 0.1764705882, green: 0.2901960784, blue: 0.5607843137, alpha: 1)
-        self.navigationCoontroller.navigationBar.tintColor = .white
-        self.navigationCoontroller.navigationBar.isTranslucent = true
-        self.navigationCoontroller.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationCoontroller.navigationBar.isHidden = true
+//        self.navigationCoontroller.navigationBar.backgroundColor = #colorLiteral(red: 0.1764705882, green: 0.2901960784, blue: 0.5607843137, alpha: 1)
+//        self.navigationCoontroller.navigationBar.tintColor = .white
+//        self.navigationCoontroller.navigationBar.isTranslucent = true
+//        self.navigationCoontroller.navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
     
     func start() {
@@ -31,10 +32,11 @@ class HomeCoordinator {
 
     
     private lazy var tabBarController: UITabBarController = {
+        let backButton = UIBarButtonItem(image: UIImage(named: "back2"), style: .plain, target: self, action: #selector(back))
+
         let viewModel = HomeViewModel(coordinator: self)
         let homeViewController = HomeTabBarViewController(viewModel: viewModel)
         homeViewController.tabBar.backgroundColor = .white
-       
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
 
 
@@ -42,28 +44,35 @@ class HomeCoordinator {
         let mainNavigationController = UINavigationController(rootViewController: mainViewController)
         mainNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         mainNavigationController.navigationBar.titleTextAttributes = textAttributes
-        mainCoordinator.setNavigationController(navigationController: mainNavigationController)
-        
+        mainNavigationController.navigationBar.tintColor = .white
         let filter = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(navigateToFilter))
         mainNavigationController.navigationBar.topItem?.rightBarButtonItem = filter
-
+        mainNavigationController.navigationBar.topItem?.leftBarButtonItem = backButton
+        mainCoordinator.setNavigationController(navigationController: mainNavigationController)
         
+
+        // Servies Tab
         let servicesRootViewController = servicesViewController
         let servicesNavigationController = UINavigationController(rootViewController: servicesViewController)
         servicesNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         servicesNavigationController.navigationBar.titleTextAttributes = textAttributes
+        servicesNavigationController.navigationBar.tintColor = .white
+        servicesNavigationController.navigationBar.topItem?.leftBarButtonItem = backButton
         servicesCoordinator.setNavigationBar(navigationController: servicesNavigationController)
         
         
+        // Menu Tab
+        let menuRootViewController = menuViewController
+        let menuNavigationController = UINavigationController(rootViewController: menuViewController)
+        menuNavigationController.navigationBar.isHidden = true
+        servicesNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        menuCoordinator.setNavigationBar(navigationController: menuNavigationController)
+
         
-        let viewController3 = UIViewController()
-        viewController3.view.backgroundColor = .blue
-        
-        homeViewController.viewControllers = [mainNavigationController, servicesNavigationController, viewController3]
-        
+        homeViewController.viewControllers = [mainNavigationController, servicesNavigationController, menuNavigationController]
         mainNavigationController.tabBarItem = homeViewController.item1
         servicesNavigationController.tabBarItem = homeViewController.item2
-        viewController3.tabBarItem = homeViewController.item3
+        menuNavigationController.tabBarItem = homeViewController.item3
         return homeViewController
     }()
     
@@ -84,6 +93,12 @@ class HomeCoordinator {
         return servicesViewController
     }()
     
+    private lazy var menuViewController: MenuViewController = {
+        let menuViewModel = MenuViewModel(coordinator: menuCoordinator)
+        let menuViewController = MenuViewController(viewModel: menuViewModel)
+        return menuViewController
+    }()
+
 
     private lazy var filterViewController: FilterViewController = {
         let filterViewController = FilterViewController(viewModel: mainViewModel)
@@ -95,6 +110,10 @@ class HomeCoordinator {
     
     @objc func navigateToFilter() {
         mainViewController.present(filterViewController, animated: true, completion: nil)
+    }
+    
+    @objc func back() {
+        navigationCoontroller.popViewController(animated: true)
     }
 
 

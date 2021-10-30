@@ -31,7 +31,7 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xE-QF-SBH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
                         <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfu-1d-G6N">
@@ -41,7 +41,7 @@
                             <constraint firstAttribute="width" constant="46" id="dr0-ql-ATW"/>
                         </constraints>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" image="filter-back-icon"/>
+                        <state key="normal" image="back2"/>
                         <connections>
                             <action selector="buttoonBackClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wOo-lq-Z3y"/>
                         </connections>
@@ -135,8 +135,8 @@
                     <constraint firstAttribute="bottom" secondItem="bQL-Ta-drH" secondAttribute="bottom" constant="14" id="FPA-Jm-Rzb"/>
                     <constraint firstItem="5xE-QF-SBH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="T1S-Fh-fU0"/>
                     <constraint firstAttribute="trailing" secondItem="bQL-Ta-drH" secondAttribute="trailing" id="Y1B-hO-qWO"/>
+                    <constraint firstItem="5xE-QF-SBH" firstAttribute="bottom" secondItem="Rju-TO-cuT" secondAttribute="bottom" id="Yta-y7-80X"/>
                     <constraint firstAttribute="trailing" secondItem="dWW-AE-ErI" secondAttribute="trailing" constant="16" id="ZO8-Gl-CVn"/>
-                    <constraint firstAttribute="bottom" secondItem="5xE-QF-SBH" secondAttribute="bottom" id="bSh-cN-IFD"/>
                     <constraint firstAttribute="trailing" secondItem="Rju-TO-cuT" secondAttribute="trailing" id="l99-He-R7U"/>
                     <constraint firstItem="Rju-TO-cuT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ox5-wo-4Ac"/>
                     <constraint firstItem="vfu-1d-G6N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="qHI-w5-q0b"/>
@@ -160,7 +160,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="filter-back-icon" width="10.5" height="17.5"/>
+        <image name="back2" width="10.5" height="17.5"/>
         <image name="scroll-left-icon" width="24" height="24"/>
         <image name="scroll-right-icon" width="24" height="24"/>
         <namedColor name="bg-color">
