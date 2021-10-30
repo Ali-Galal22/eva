@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController" customModule="Eva" customModuleProvider="target">
+            <connections>
+                <outlet property="tableview" destination="0RU-Iz-Bci" id="Jga-vX-EG8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3f-hS-cCn">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YOi-bp-ZKz"/>
+                    </constraints>
+                    <color key="barTintColor" name="eva-blue-color"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="من نحن" id="eXy-V9-xEx">
+                            <barButtonItem key="leftBarButtonItem" image="back2" id="8MZ-rn-CN3">
+                                <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="buttonBackClicked:" destination="-1" id="Go6-Ld-trg"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0RU-Iz-Bci">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" name="bg-color"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Eh6-ak-b3N"/>
+                        <outlet property="delegate" destination="-1" id="AuQ-D3-gzX"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="eva-blue-color"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y3f-hS-cCn" secondAttribute="trailing" id="1Nk-EB-W73"/>
+                <constraint firstItem="Y3f-hS-cCn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9zI-lA-yza"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0RU-Iz-Bci" secondAttribute="trailing" id="Lpp-H1-tO5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="Y3f-hS-cCn" secondAttribute="leading" id="MzJ-vW-J5P"/>
+                <constraint firstItem="0RU-Iz-Bci" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Vv9-5E-fUF"/>
+                <constraint firstItem="0RU-Iz-Bci" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Wk7-US-CCh"/>
+                <constraint firstItem="0RU-Iz-Bci" firstAttribute="top" secondItem="Y3f-hS-cCn" secondAttribute="bottom" id="eUX-kZ-9vl"/>
+            </constraints>
+            <point key="canvasLocation" x="31.884057971014496" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back2" width="10.5" height="17.5"/>
+        <namedColor name="bg-color">
+            <color red="0.92199999094009399" green="0.93300002813339233" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eva-blue-color">
+            <color red="0.17647058823529413" green="0.29019607843137257" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

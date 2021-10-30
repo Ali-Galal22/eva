@@ -11,6 +11,7 @@ import Foundation
 enum RequstType {
     case service
     case project
+    case contactUs
 }
 protocol SendRequestDelegate: AnyObject {
     func onStateChanged(state: LoadingState)
@@ -66,6 +67,8 @@ class SendRequestViewModel {
             return project?.image ?? ""
         case .service:
             return service?.image ?? ""
+        case .contactUs:
+            return ""
         }
     }
     
@@ -75,6 +78,8 @@ class SendRequestViewModel {
             return project?.title ?? ""
         case .service:
             return service?.title ?? ""
+        case .contactUs:
+            return ""
         }
     }
 
@@ -84,6 +89,8 @@ class SendRequestViewModel {
             return project?.content ?? ""
         case .service:
             return service?.content ?? ""
+        case .contactUs:
+            return ""
         }
     }
     

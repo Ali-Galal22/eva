@@ -28,6 +28,8 @@ struct Constants {
         
         static let PartnerCell = "PartnerCell"
         static let MenuItemCell = "MenuItemCell"
+        static let AboutUsMainCell = "AboutUsMainCell"
+        static let AboutUsCell = "AboutUsCell"
         
     }
 }

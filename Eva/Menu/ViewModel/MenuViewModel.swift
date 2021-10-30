@@ -12,6 +12,8 @@ protocol MenuDelegate: AnyObject {
 
 protocol MenuViewModelCoordinator {
     func navigateToOurPartners()
+    func contactUs()
+    func aboutUs()
 }
 
 enum MenuItems: String {
@@ -51,5 +53,11 @@ class MenuViewModel {
         coordinator.navigateToOurPartners()
     }
 
-
+    func contactUs() {
+        coordinator.contactUs()
+    }
+    
+    func aboutUs() {
+        coordinator.aboutUs()
+    }
 }

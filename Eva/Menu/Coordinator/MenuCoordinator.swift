@@ -25,5 +25,20 @@ extension MenuCoordinator: MenuViewModelCoordinator {
         partnersViewController.modalPresentationStyle = .fullScreen
         navigationController?.present(partnersViewController, animated: true, completion: nil)
     }
+    
+    func contactUs() {
+        let sendRequestCoordinator = SendRequestCoordinator(navigationController: self.navigationController!)
+        let sendRequestViewModel = SendRequestViewModel(coordinator: sendRequestCoordinator, service: nil, project: nil, requestType: .contactUs)
+        let sendRequestViewController = SendRequestViewController(viewModel: sendRequestViewModel)
+        sendRequestViewController.modalPresentationStyle = .fullScreen
+        navigationController?.present(sendRequestViewController, animated: true, completion: nil)
+    }
+    
+    func aboutUs() {
+        let aboutUsViewModel = AboutUsViewModel()
+        let aboutusViewController = AboutUsViewController(viewModel: aboutUsViewModel)
+        aboutusViewController.modalPresentationStyle = .fullScreen
+        navigationController?.present(aboutusViewController, animated: true, completion: nil)
+    }
 }
 

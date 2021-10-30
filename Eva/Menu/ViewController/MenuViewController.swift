@@ -80,8 +80,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             self.tabBarController?.selectedIndex = 1
         case .ourPartners:
             self.viewModel.navigateToOurPartners()
-        default:
-            break
+        case .contactUs:
+            viewModel.contactUs()
+        case .aboutUs:
+            viewModel.aboutUs()
         }
     }
 }

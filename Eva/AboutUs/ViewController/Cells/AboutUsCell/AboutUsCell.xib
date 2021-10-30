@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AboutUsCell" rowHeight="198" id="KGk-i7-Jjw" customClass="AboutUsCell" customModule="Eva" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0l-je-NPM">
+                        <rect key="frame" x="16" y="0.0" width="288" height="198"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRZ-db-1Cd">
+                                <rect key="frame" x="16" y="19" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2r3-pf-tUe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="960-gN-Yi2">
+                                <rect key="frame" x="16" y="56" width="256" height="126"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-jh-beG">
+                                <rect key="frame" x="257" y="22" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="XbU-ON-nFO"/>
+                                    <constraint firstAttribute="width" constant="15" id="c91-id-r1g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="960-gN-Yi2" firstAttribute="leading" secondItem="q0l-je-NPM" secondAttribute="leading" constant="16" id="2ab-oW-gWx"/>
+                            <constraint firstItem="sRZ-db-1Cd" firstAttribute="leading" secondItem="q0l-je-NPM" secondAttribute="leading" constant="16" id="2f1-0a-0Zw"/>
+                            <constraint firstAttribute="bottom" secondItem="960-gN-Yi2" secondAttribute="bottom" constant="16" id="Am1-JY-jgw"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="60" id="Mor-c3-e7s"/>
+                            <constraint firstAttribute="trailing" secondItem="960-gN-Yi2" secondAttribute="trailing" constant="16" id="WPs-0l-Iog"/>
+                            <constraint firstItem="960-gN-Yi2" firstAttribute="top" secondItem="sRZ-db-1Cd" secondAttribute="bottom" constant="16" id="ZL1-nv-4Lc"/>
+                            <constraint firstItem="sRZ-db-1Cd" firstAttribute="top" secondItem="q0l-je-NPM" secondAttribute="top" constant="19" id="ZLe-6H-Al1"/>
+                            <constraint firstItem="LB2-jh-beG" firstAttribute="centerY" secondItem="sRZ-db-1Cd" secondAttribute="centerY" id="fYe-h9-hcg"/>
+                            <constraint firstAttribute="trailing" secondItem="LB2-jh-beG" secondAttribute="trailing" constant="16" id="rRv-cL-UYK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="q0l-je-NPM" secondAttribute="trailing" constant="16" id="HJQ-zW-koF"/>
+                    <constraint firstAttribute="bottom" secondItem="q0l-je-NPM" secondAttribute="bottom" id="MIZ-bm-t1T"/>
+                    <constraint firstItem="q0l-je-NPM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RMW-q1-AUu"/>
+                    <constraint firstItem="q0l-je-NPM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wrd-Lw-1Gb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageViewOpenClose" destination="LB2-jh-beG" id="Vt6-Jd-Tu8"/>
+                <outlet property="labelContent" destination="960-gN-Yi2" id="Owt-h8-BZr"/>
+                <outlet property="labelTitle" destination="sRZ-db-1Cd" id="LVl-1n-Q13"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="135.26785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

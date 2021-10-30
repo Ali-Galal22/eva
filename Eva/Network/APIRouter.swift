@@ -17,6 +17,7 @@ enum APIRouter: URLRequestConvertible {
     case sendRequest(queryParameters: SendRequestRequest)
     case getProjectDetails(queryParameters: [String: String] = [:])
     case getOurPartners(queryParameters: [String: String] = [:])
+    case getAboutUs(queryParameters: [String: String] = [:])
 }
 
 extension APIRouter {
@@ -24,7 +25,7 @@ extension APIRouter {
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
         switch self {
-        case .listProjects, .homeList, .getFilterValues, .filter, .getServices, .getProjectDetails, .getOurPartners:
+        case .listProjects, .homeList, .getFilterValues, .filter, .getServices, .getProjectDetails, .getOurPartners, .getAboutUs:
             return .get
         case .sendRequest:
             return .post
@@ -51,7 +52,7 @@ extension APIRouter {
     // MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-        case .listProjects(let parameters), .homeList(let parameters), .getFilterValues(let parameters), .filter(let parameters), .getServices(let parameters), .getProjectDetails(let parameters), .getOurPartners(let parameters):
+        case .listProjects(let parameters), .homeList(let parameters), .getFilterValues(let parameters), .filter(let parameters), .getServices(let parameters), .getProjectDetails(let parameters), .getOurPartners(let parameters), .getAboutUs(let parameters):
             return parameters
         case.sendRequest(let parameters):
             return parameters.getParamsAsJson()

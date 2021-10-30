@@ -24,6 +24,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendRequestViewController" customModule="Eva" customModuleProvider="target">
             <connections>
                 <outlet property="buttonServiceDetails" destination="uAQ-Mx-g7t" id="38T-Zr-hPL"/>
+                <outlet property="containerView" destination="7jn-Ea-2MR" id="nUc-RA-ZBa"/>
                 <outlet property="imageViewService" destination="2rD-uN-bb5" id="O1Z-C3-x89"/>
                 <outlet property="labelEmailTitle" destination="KX7-b7-Jjk" id="YD7-Cd-1KL"/>
                 <outlet property="labelErrorEmail" destination="55c-rt-aY4" id="g5r-cu-eqs"/>
@@ -34,6 +35,10 @@
                 <outlet property="labelNameTitle" destination="Aa8-ID-slP" id="YoN-1Y-l8d"/>
                 <outlet property="labelServiceDetails" destination="0cb-NQ-jT8" id="lVN-7M-4Eo"/>
                 <outlet property="labelServiceName" destination="4on-2Z-zno" id="D4G-TW-Iln"/>
+                <outlet property="navItem" destination="014-H1-S0a" id="r7E-6Z-KEh"/>
+                <outlet property="projectDetailsView" destination="FfE-0v-5aX" id="yM7-cb-oVP"/>
+                <outlet property="sendRequestView" destination="mxJ-nT-vDm" id="pj1-GM-eMo"/>
+                <outlet property="sendRequestViewTopConstraint" destination="S0E-XN-CyX" id="5yh-8e-1nY"/>
                 <outlet property="textfieldEmail" destination="VBw-nv-EH6" id="lty-Ay-EDp"/>
                 <outlet property="textfieldMobile" destination="nfD-Xc-tDh" id="SFl-kP-OlX"/>
                 <outlet property="textfieldName" destination="gkr-gC-knJ" id="ftE-M7-m3U"/>

@@ -11,6 +11,8 @@ import UIKit
 class SendRequestViewController: UIViewController {
 
     // MARK: - Outlets
+    @IBOutlet weak var navItem: UINavigationItem!
+    
     @IBOutlet weak var imageViewService: UIImageView!
     @IBOutlet weak var labelServiceName: UILabel!
     @IBOutlet weak var labelServiceDetails: UILabel!
@@ -32,7 +34,11 @@ class SendRequestViewController: UIViewController {
     @IBOutlet weak var labelMoreDetailsTitle: UILabel!
     @IBOutlet weak var textviewMoreDetails: UITextView!
     
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var projectDetailsView: UIView!
+    @IBOutlet weak var sendRequestView: UIView!
     
+    @IBOutlet weak var sendRequestViewTopConstraint: NSLayoutConstraint!
     
     
     private let viewModel: SendRequestViewModel
@@ -51,6 +57,12 @@ class SendRequestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if viewModel.getRequestType() == .contactUs {
+            projectDetailsView.isHidden = true
+            sendRequestView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16).isActive = true
+            self.navItem.title = "اتصل بنا"
+        }
+        
         activityIndicator = view.addLoadingIndicator()
         viewModel.configure(with: self)
         if let imageURL = URL(string: viewModel.getServiceImageUrl()) {
