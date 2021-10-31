@@ -8,4 +8,5 @@ target 'Eva' do
   pod 'Alamofire'
   pod 'KeychainSwift'
   pod 'Kingfisher'
+  pod 'lottie-ios', '~> 3.2'
 end

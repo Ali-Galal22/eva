@@ -7,9 +7,10 @@
 //
 
 import UIKit
+typealias Animation = (UITableViewCell, IndexPath, UITableView) -> Void
 
 class MainViewController: UIViewController {
-    
+
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     private weak var activityIndicator: UIActivityIndicatorView!
@@ -43,29 +44,6 @@ class MainViewController: UIViewController {
         tableView.register(UINib(nibName: "\(HomeCell.self)", bundle: nil), forCellReuseIdentifier: "\(HomeCell.self)")
     }
     
-//    private func test() {
-//        let Url = "http://demo.evaresc.com/api/?action=index"
-//        guard let serviceUrl = URL(string: Url) else { return }
-//        var request = URLRequest(url: serviceUrl)
-//        request.httpMethod = "GET"
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//        request.setValue("application/json", forHTTPHeaderField: "Accept")
-//
-//        let session = URLSession.shared
-//        session.dataTask(with: request) { (data, response, error) in
-//            if let response = response {
-//                print(response)
-//            }
-//            if let data = data {
-//                do {
-//                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-//                    print(json)
-//                } catch {
-//                    print(error)
-//                }
-//            }
-//        }.resume()
-//    }
 }
 
 
@@ -115,6 +93,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             break
         }
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let animation = AnimationFactory.makeFadeAnimation(duration: 0.5, delayFactor: 0.05)
+        let animator = Animator(animation: animation)
+        animator.animate(cell: cell, at: indexPath, in: tableView)
+    }
+
 }
 
 
@@ -126,8 +111,21 @@ extension MainViewController: MainListDelegate {
         case .ready:
             activityIndicator.stopAnimating()
             tableView.reloadData()
-        case .error:
+        case .error(let api, _):
             activityIndicator.stopAnimating()
+            switch api {
+            case .homeList(queryParameters: [:]):
+                let errorView = ErrorView()
+                errorView.modalPresentationStyle = .overFullScreen
+                errorView.onRetry = { [weak self] in
+                    guard let self = self else { return }
+                    self.viewModel.retryLoadHome()
+                    self.dismiss(animated: true, completion: nil)
+                }
+                self.present(errorView, animated: true, completion: nil)
+            default:
+                break
+            }
             // TODO: handle error case by showing an error view with a retry button
             break
         }
@@ -149,3 +147,6 @@ extension MainViewController: HomeCellDelegate {
 
     }
 }
+
+
+

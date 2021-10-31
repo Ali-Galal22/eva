@@ -49,7 +49,7 @@ class ServicesViewModel {
                 self.services = response.data?.services
                 self.state = .ready(.homeList(queryParameters: [:]))
             case .failure(let error):
-                self.state = .error(error: error.localizedDescription)
+                self.state = .error(.homeList(queryParameters: [:]), error: error.localizedDescription)
             }
         }
     }
@@ -72,5 +72,9 @@ class ServicesViewModel {
         if let service = services?[index] {
             coordinator.navigateToServiceDetails(service: service)
         }
+    }
+    
+    func retryGetServices() {
+        loadData()
     }
 }

@@ -134,7 +134,7 @@ class MainViewModel {
                 self.projects = response.data?.projects
                 self.state = .ready(.homeList(queryParameters: [:]))
             case .failure(let error):
-                self.state = .error(error: error.localizedDescription)
+                self.state = .error(.homeList(queryParameters: [:]), error: error.localizedDescription)
             }
         }
     }
@@ -165,6 +165,10 @@ class MainViewModel {
         if let service = getService(index: index) {
             coordinator.navigateToServiceDetails(service: service)
         }
+    }
+
+    func retryLoadHome() {
+        getHomeList()
     }
 
 }
@@ -315,6 +319,7 @@ extension MainViewModel {
         
         getHomeList()
     }
+        
 }
 
 

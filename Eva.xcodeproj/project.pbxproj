@@ -36,6 +36,12 @@
 		8430ED89272DDF3D00376FC2 /* AboutUsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430ED87272DDF3D00376FC2 /* AboutUsCell.swift */; };
 		8430ED8A272DDF3D00376FC2 /* AboutUsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8430ED88272DDF3D00376FC2 /* AboutUsCell.xib */; };
 		8430ED8E272E84DA00376FC2 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430ED8D272E84DA00376FC2 /* UILabel+Extension.swift */; };
+		8430ED99272E958F00376FC2 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 8430ED98272E958F00376FC2 /* success.json */; };
+		8430ED9B272E975800376FC2 /* success2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8430ED9A272E975800376FC2 /* success2.json */; };
+		8430EDB1272F327F00376FC2 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430EDB0272F327F00376FC2 /* UITableView+Extension.swift */; };
+		8430EDB5272F35C700376FC2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430EDB3272F35C700376FC2 /* ErrorView.swift */; };
+		8430EDB6272F35C700376FC2 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8430EDB4272F35C700376FC2 /* ErrorView.xib */; };
+		8430EDBA272F429C00376FC2 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 8430EDB9272F429C00376FC2 /* error.json */; };
 		84640A3C2720951F00FC7A72 /* SendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A3A2720951F00FC7A72 /* SendRequestViewController.swift */; };
 		84640A3D2720951F00FC7A72 /* SendRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A3B2720951F00FC7A72 /* SendRequestViewController.xib */; };
 		84640A432721596000FC7A72 /* SendRequestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A422721596000FC7A72 /* SendRequestRequest.swift */; };
@@ -157,6 +163,12 @@
 		8430ED87272DDF3D00376FC2 /* AboutUsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsCell.swift; sourceTree = "<group>"; };
 		8430ED88272DDF3D00376FC2 /* AboutUsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsCell.xib; sourceTree = "<group>"; };
 		8430ED8D272E84DA00376FC2 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		8430ED98272E958F00376FC2 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		8430ED9A272E975800376FC2 /* success2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success2.json; sourceTree = "<group>"; };
+		8430EDB0272F327F00376FC2 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		8430EDB3272F35C700376FC2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		8430EDB4272F35C700376FC2 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		8430EDB9272F429C00376FC2 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
 		84640A3A2720951F00FC7A72 /* SendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestViewController.swift; sourceTree = "<group>"; };
 		84640A3B2720951F00FC7A72 /* SendRequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendRequestViewController.xib; sourceTree = "<group>"; };
 		84640A422721596000FC7A72 /* SendRequestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestRequest.swift; sourceTree = "<group>"; };
@@ -458,6 +470,25 @@
 			path = AboutUsCell;
 			sourceTree = "<group>";
 		};
+		8430ED97272E953C00376FC2 /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8430EDB9272F429C00376FC2 /* error.json */,
+				8430ED9A272E975800376FC2 /* success2.json */,
+				8430ED98272E958F00376FC2 /* success.json */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+		8430EDB2272F359A00376FC2 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				8430EDB3272F35C700376FC2 /* ErrorView.swift */,
+				8430EDB4272F35C700376FC2 /* ErrorView.xib */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
 		84640A3F2721592000FC7A72 /* SendRequestView */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,6 +653,8 @@
 			isa = PBXGroup;
 			children = (
 				84640A4C2721E4EE00FC7A72 /* SuccessView */,
+				8430EDB2272F359A00376FC2 /* ErrorView */,
+				8430ED97272E953C00376FC2 /* LottieFiles */,
 				847CA8EB2716CEB000103602 /* Fonts */,
 				847CA88327144B8800103602 /* Extensions */,
 				847CA85B2713452300103602 /* Enums */,
@@ -666,7 +699,6 @@
 				847CA86C2713454600103602 /* APIClient.swift */,
 				847CA86D2713454600103602 /* APIRouter.swift */,
 				847CA86E2713454600103602 /* APIClient+Extension.swift */,
-				8430ED8D272E84DA00376FC2 /* UILabel+Extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -718,6 +750,8 @@
 			isa = PBXGroup;
 			children = (
 				847CA8C62715F61B00103602 /* UIView+Extension.swift */,
+				8430ED8D272E84DA00376FC2 /* UILabel+Extension.swift */,
+				8430EDB0272F327F00376FC2 /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1107,6 +1141,8 @@
 				847CA8FE2716D2BE00103602 /* HomeCell.xib in Resources */,
 				847CA8C52715F09A00103602 /* Colors.xcassets in Resources */,
 				8430ED84272D940F00376FC2 /* AboutUsMainCell.xib in Resources */,
+				8430ED99272E958F00376FC2 /* success.json in Resources */,
+				8430EDBA272F429C00376FC2 /* error.json in Resources */,
 				847CA8E12716BC4000103602 /* MainViewController.xib in Resources */,
 				847CA8D72715FC1300103602 /* HomeTabBarViewController.xib in Resources */,
 				84640A582722D8BC00FC7A72 /* ServiceDetailsViewController.xib in Resources */,
@@ -1115,6 +1151,7 @@
 				8430ED8A272DDF3D00376FC2 /* AboutUsCell.xib in Resources */,
 				847CA8F92716CECE00103602 /* Tajawal-Light.ttf in Resources */,
 				84A7697327285AD600A579CA /* MapCell.xib in Resources */,
+				8430ED9B272E975800376FC2 /* success2.json in Resources */,
 				847CA87E2713454600103602 /* StartUpViewController.xib in Resources */,
 				8430ED67272C587C00376FC2 /* MenuViewController.xib in Resources */,
 				8430ED70272C62F800376FC2 /* MenuItemCell.xib in Resources */,
@@ -1139,6 +1176,7 @@
 				84640A3D2720951F00FC7A72 /* SendRequestViewController.xib in Resources */,
 				84A7697D272887A000A579CA /* ProjectFeatureCell.xib in Resources */,
 				8430ED59272C499100376FC2 /* PartnersViewController.xib in Resources */,
+				8430EDB6272F35C700376FC2 /* ErrorView.xib in Resources */,
 				849C541C27134447000F1720 /* Assets.xcassets in Resources */,
 				8423A4712726B67600D1F126 /* ImageGallaryCell.xib in Resources */,
 			);
@@ -1230,6 +1268,7 @@
 				84B1FD23272A8A5300406102 /* ProjectBenifitsCell.swift in Sources */,
 				847CA8E62716BD9D00103602 /* MainCoordinator.swift in Sources */,
 				847CA8E82716C4C200103602 /* HomeListResponse.swift in Sources */,
+				8430EDB5272F35C700376FC2 /* ErrorView.swift in Sources */,
 				8485C2BA27182AAB0087A533 /* FilterViewController.swift in Sources */,
 				847CA8672713452300103602 /* BaseResponse.swift in Sources */,
 				848AC45D271EE2400040B07C /* ServicesCoordinator.swift in Sources */,
@@ -1237,6 +1276,7 @@
 				847CA8692713452300103602 /* Keychain.swift in Sources */,
 				8423A47E2727F36F00D1F126 /* ProjectInfoCell.swift in Sources */,
 				84640A4F2721E50A00FC7A72 /* SuccessViewController.swift in Sources */,
+				8430EDB1272F327F00376FC2 /* UITableView+Extension.swift in Sources */,
 				8485C2BF271833700087A533 /* FilterCell.swift in Sources */,
 				8430ED66272C587C00376FC2 /* MenuViewController.swift in Sources */,
 				849C541327134445000F1720 /* AppDelegate.swift in Sources */,

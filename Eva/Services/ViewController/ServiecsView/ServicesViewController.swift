@@ -65,8 +65,21 @@ extension ServicesViewController: ServicesDelegate {
         case .ready:
             activityIndicator.stopAnimating()
             tableView.reloadData()
-        case .error:
+        case .error(let api, _):
             activityIndicator.stopAnimating()
+            switch api {
+            case .homeList(queryParameters: [:]):
+                let errorView = ErrorView()
+                errorView.modalPresentationStyle = .overFullScreen
+                errorView.onRetry = { [weak self] in
+                    guard let self = self else { return }
+                    self.viewModel.retryGetServices()
+                    self.dismiss(animated: true, completion: nil)
+                }
+                self.present(errorView, animated: true, completion: nil)
+            default:
+                break
+            }
             // TODO: handle error case by showing an error view with a retry button
             break
         }

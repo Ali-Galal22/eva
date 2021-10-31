@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -71,6 +72,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="bg-color"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="q0l-je-NPM" secondAttribute="trailing" constant="16" id="HJQ-zW-koF"/>
                     <constraint firstAttribute="bottom" secondItem="q0l-je-NPM" secondAttribute="bottom" id="MIZ-bm-t1T"/>
@@ -88,6 +90,9 @@
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="bg-color">
+            <color red="0.92199999094009399" green="0.93300002813339233" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

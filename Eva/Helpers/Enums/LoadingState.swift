@@ -11,5 +11,5 @@ import Foundation
 enum LoadingState {
     case loading
     case ready(_: APIRouter? = nil)
-    case error(error: String)
+    case error(_: APIRouter? = nil, error: String)
 }
