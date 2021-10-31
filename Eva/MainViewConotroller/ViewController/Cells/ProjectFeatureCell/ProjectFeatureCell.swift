@@ -19,6 +19,7 @@ class ProjectFeatureCell: UITableViewCell {
 
     func configureCell(projectDetails: String, opened: Bool) {
         self.labelProjectDetails.text = projectDetails
+        self.labelProjectDetails.setLineHeight(lineHeight: 10)
         if opened {
             imageViewOpenClose.image = #imageLiteral(resourceName: "section-open-icon")
         } else {

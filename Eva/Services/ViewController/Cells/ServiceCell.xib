@@ -16,6 +16,9 @@
         <array key="Tajawal-Medium.ttf">
             <string>Tajawal-Medium</string>
         </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -37,19 +40,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEv-uf-EeY">
-                                <rect key="frame" x="16" y="128" width="256" height="0.0"/>
+                                <rect key="frame" x="16" y="145" width="256" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twP-RH-7zt">
-                                <rect key="frame" x="16" y="138" width="256" height="79"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twP-RH-7zt">
+                                <rect key="frame" x="16" y="155" width="256" height="62"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvD-6C-msn">
-                                <rect key="frame" x="16" y="233" width="68" height="35"/>
+                                <rect key="frame" x="16" y="233" width="54" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Dch-ON-kBG"/>
                                 </constraints>
@@ -93,10 +96,10 @@
                             <constraint firstItem="wvD-6C-msn" firstAttribute="top" secondItem="Rdt-sa-8UW" secondAttribute="top" id="Pde-Zk-ewf"/>
                             <constraint firstItem="wvD-6C-msn" firstAttribute="leading" secondItem="jT2-zJ-Adh" secondAttribute="leading" constant="16" id="PkH-CK-bA4"/>
                             <constraint firstItem="iEv-uf-EeY" firstAttribute="leading" secondItem="jT2-zJ-Adh" secondAttribute="leading" constant="16" id="SW3-vG-FEC"/>
-                            <constraint firstItem="iEv-uf-EeY" firstAttribute="top" secondItem="jT2-zJ-Adh" secondAttribute="top" constant="128" id="aER-6Y-PG5"/>
                             <constraint firstAttribute="bottom" secondItem="Rdt-sa-8UW" secondAttribute="bottom" constant="16" id="bQM-8Y-rNp"/>
                             <constraint firstItem="twP-RH-7zt" firstAttribute="leading" secondItem="jT2-zJ-Adh" secondAttribute="leading" constant="16" id="glu-Wh-05U"/>
                             <constraint firstAttribute="trailing" secondItem="Rdt-sa-8UW" secondAttribute="trailing" constant="16" id="tE1-pw-uba"/>
+                            <constraint firstItem="iEv-uf-EeY" firstAttribute="top" secondItem="hvb-iN-KEl" secondAttribute="bottom" constant="25" id="uD2-ue-CWl"/>
                             <constraint firstAttribute="trailing" secondItem="iEv-uf-EeY" secondAttribute="trailing" constant="16" id="vJ5-iH-kND"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>

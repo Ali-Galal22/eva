@@ -37,6 +37,8 @@ class ServiceDetailsViewController: UIViewController {
         }
         labelTitle.text = viewModel.getServiceTitle()
         labelContent.text = viewModel.getServiceContent()
+        labelContent.setLineHeight(lineHeight: 10)
+
     }
     
     // MARK: - Actions

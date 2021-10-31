@@ -22,6 +22,8 @@ class AboutUsCell: UITableViewCell {
     func configureCell(title: String, content: String, opened: Bool) {
         self.labelTitle.text = title
         self.labelContent.text = content
+        self.labelContent.setLineHeight(lineHeight: 10)
+
         if opened {
             imageViewOpenClose.image = #imageLiteral(resourceName: "section-open-icon")
         } else {

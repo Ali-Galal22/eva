@@ -71,7 +71,8 @@ class SendRequestViewController: UIViewController {
         
         labelServiceName.text = viewModel.getServiceTitle()
         labelServiceDetails.text = viewModel.getServiceContent()
-        
+        labelServiceDetails.setLineHeight(lineHeight: 10)
+
         if viewModel.getRequestType() == .project {
             self.buttonServiceDetails.isHidden = true
         }

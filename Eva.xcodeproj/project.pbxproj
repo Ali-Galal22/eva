@@ -35,6 +35,7 @@
 		8430ED84272D940F00376FC2 /* AboutUsMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8430ED82272D940F00376FC2 /* AboutUsMainCell.xib */; };
 		8430ED89272DDF3D00376FC2 /* AboutUsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430ED87272DDF3D00376FC2 /* AboutUsCell.swift */; };
 		8430ED8A272DDF3D00376FC2 /* AboutUsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8430ED88272DDF3D00376FC2 /* AboutUsCell.xib */; };
+		8430ED8E272E84DA00376FC2 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430ED8D272E84DA00376FC2 /* UILabel+Extension.swift */; };
 		84640A3C2720951F00FC7A72 /* SendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A3A2720951F00FC7A72 /* SendRequestViewController.swift */; };
 		84640A3D2720951F00FC7A72 /* SendRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84640A3B2720951F00FC7A72 /* SendRequestViewController.xib */; };
 		84640A432721596000FC7A72 /* SendRequestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84640A422721596000FC7A72 /* SendRequestRequest.swift */; };
@@ -155,6 +156,7 @@
 		8430ED82272D940F00376FC2 /* AboutUsMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsMainCell.xib; sourceTree = "<group>"; };
 		8430ED87272DDF3D00376FC2 /* AboutUsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsCell.swift; sourceTree = "<group>"; };
 		8430ED88272DDF3D00376FC2 /* AboutUsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsCell.xib; sourceTree = "<group>"; };
+		8430ED8D272E84DA00376FC2 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		84640A3A2720951F00FC7A72 /* SendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestViewController.swift; sourceTree = "<group>"; };
 		84640A3B2720951F00FC7A72 /* SendRequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendRequestViewController.xib; sourceTree = "<group>"; };
 		84640A422721596000FC7A72 /* SendRequestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestRequest.swift; sourceTree = "<group>"; };
@@ -664,6 +666,7 @@
 				847CA86C2713454600103602 /* APIClient.swift */,
 				847CA86D2713454600103602 /* APIRouter.swift */,
 				847CA86E2713454600103602 /* APIClient+Extension.swift */,
+				8430ED8D272E84DA00376FC2 /* UILabel+Extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -957,7 +960,6 @@
 		849C541127134445000F1720 /* Eva */ = {
 			isa = PBXGroup;
 			children = (
-				8430ED71272D651200376FC2 /* AboutUs */,
 				847CA8C92715F75600103602 /* AppDelegate */,
 				847CA87F2713464F00103602 /* AppConfigurations */,
 				847CA86F2713454600103602 /* StartUp */,
@@ -966,6 +968,7 @@
 				848AC452271EE18A0040B07C /* Services */,
 				8430ED5F272C54B500376FC2 /* Menu */,
 				8430ED49272C2D3800376FC2 /* OurPartners */,
+				8430ED71272D651200376FC2 /* AboutUs */,
 				847CA85A2713452300103602 /* Helpers */,
 				847CA86A2713454600103602 /* Network */,
 				849C541B27134447000F1720 /* Assets.xcassets */,
@@ -1198,6 +1201,7 @@
 				84640A4927216CC800FC7A72 /* SendRequestCoordinator.swift in Sources */,
 				847CA8E02716BC4000103602 /* MainViewController.swift in Sources */,
 				84640A772725511600FC7A72 /* ProjectDetailsMainImageCell.swift in Sources */,
+				8430ED8E272E84DA00376FC2 /* UILabel+Extension.swift in Sources */,
 				8430ED58272C499100376FC2 /* PartnersViewController.swift in Sources */,
 				84640A682724A98500FC7A72 /* ProjectsDetailsViewController.swift in Sources */,
 				84640A432721596000FC7A72 /* SendRequestRequest.swift in Sources */,

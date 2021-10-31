@@ -62,7 +62,7 @@
                     </textAttributes>
                     <items>
                         <navigationItem title="نموذج الحجز والطلب" id="014-H1-S0a">
-                            <barButtonItem key="leftBarButtonItem" image="filter-back-icon" id="KAK-Y4-NPi">
+                            <barButtonItem key="leftBarButtonItem" image="back2" id="KAK-Y4-NPi">
                                 <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="buttonBackDidClicked:" destination="-1" id="gcs-YU-Yo2"/>
@@ -97,7 +97,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cb-NQ-jT8">
                                                     <rect key="frame" x="16" y="32" width="350" height="49"/>
-                                                    <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -455,7 +455,7 @@
         </view>
     </objects>
     <resources>
-        <image name="filter-back-icon" width="10.5" height="17.5"/>
+        <image name="back2" width="10.5" height="17.5"/>
         <namedColor name="bg-color">
             <color red="0.92199999094009399" green="0.93300002813339233" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

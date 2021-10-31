@@ -26,12 +26,15 @@ class ServiceCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
     
     func configureServiceCell(with delegate: ServiceCellDelegate, and service: Service?) {
         self.delegate = delegate
         self.labelServiceName.text = service?.title
+        
         self.labelServiceDetails.text = service?.content
+        self.labelServiceDetails.setLineHeight(lineHeight: 10)
         if let imageURL = URL(string: service?.image ?? "") {
             self.imageViewService.kf.setImage(with: imageURL)
         }

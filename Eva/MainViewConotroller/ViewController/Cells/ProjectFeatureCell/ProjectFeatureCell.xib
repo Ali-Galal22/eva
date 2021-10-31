@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YD-Xg-aiD">
-                                <rect key="frame" x="20" y="45" width="280" height="65"/>
+                                <rect key="frame" x="20" y="53" width="280" height="57"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1YD-Xg-aiD" firstAttribute="top" secondItem="mOX-66-Kwi" secondAttribute="bottom" constant="8" id="0Ab-3s-416"/>
+                            <constraint firstItem="1YD-Xg-aiD" firstAttribute="top" secondItem="mOX-66-Kwi" secondAttribute="bottom" constant="16" id="0Ab-3s-416"/>
                             <constraint firstItem="1YD-Xg-aiD" firstAttribute="trailing" secondItem="mOX-66-Kwi" secondAttribute="trailing" id="8Qa-73-fU0"/>
                             <constraint firstItem="1YD-Xg-aiD" firstAttribute="leading" secondItem="mOX-66-Kwi" secondAttribute="leading" id="OQi-5D-7Ue"/>
                             <constraint firstItem="mOX-66-Kwi" firstAttribute="top" secondItem="f3w-SS-Wen" secondAttribute="top" constant="16" id="Ooo-QJ-KrD"/>

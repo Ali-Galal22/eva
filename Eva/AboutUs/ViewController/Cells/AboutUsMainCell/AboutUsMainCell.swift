@@ -24,5 +24,6 @@ class AboutUsMainCell: UITableViewCell {
     func configureCell(title: String, content: String) {
         self.labelAboutUs.text = title
         self.labelAboutUsContent.text = content
+        self.labelAboutUsContent.setLineHeight(lineHeight: 10)
     }
 }
