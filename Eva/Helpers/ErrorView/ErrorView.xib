@@ -47,8 +47,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تم استلام طلبك وسيتم التواصل معكم قريباً نشكركم على ثقتكم" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OR-nR-dOO">
-                            <rect key="frame" x="40" y="182" width="251" height="32"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OR-nR-dOO">
+                            <rect key="frame" x="40" y="182" width="251" height="0.0"/>
                             <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
