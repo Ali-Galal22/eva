@@ -14,6 +14,7 @@ struct ProjectDetails: Codable {
     let status: [ProjectStatus]?
     let type: [ProjectType]?
     let meta: ProjectInfo?
+    let features: [ProjectBenifit]?
     let gallery: [Gallary]?
 }
 
@@ -60,4 +61,13 @@ struct Gallary: Codable {
     let full: String?
     let thumb: String?
     let alt: String?
+}
+
+
+struct ProjectBenifit: Codable {
+    let variable: String?
+    let name: String?
+    let type: String?
+    let image: String?
+    let value: String?
 }

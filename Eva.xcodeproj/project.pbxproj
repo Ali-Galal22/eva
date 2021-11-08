@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8418EE7C271D60E80036F574 /* FilterValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418EE7B271D60E80036F574 /* FilterValue.swift */; };
+		8418F13127332168007E9CDB /* BenifitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F12F27332168007E9CDB /* BenifitCell.swift */; };
+		8418F13227332168007E9CDB /* BenifitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8418F13027332168007E9CDB /* BenifitCell.xib */; };
 		8423A4702726B67600D1F126 /* ImageGallaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A46E2726B67600D1F126 /* ImageGallaryCell.swift */; };
 		8423A4712726B67600D1F126 /* ImageGallaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423A46F2726B67600D1F126 /* ImageGallaryCell.xib */; };
 		8423A47E2727F36F00D1F126 /* ProjectInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A47C2727F36E00D1F126 /* ProjectInfoCell.swift */; };
@@ -135,6 +137,8 @@
 		0F948D32A2C0FD4ADC8E7B3A /* Pods-Eva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.debug.xcconfig"; path = "Target Support Files/Pods-Eva/Pods-Eva.debug.xcconfig"; sourceTree = "<group>"; };
 		59B3E9AA04CD449525181ECE /* Pods-Eva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.release.xcconfig"; path = "Target Support Files/Pods-Eva/Pods-Eva.release.xcconfig"; sourceTree = "<group>"; };
 		8418EE7B271D60E80036F574 /* FilterValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterValue.swift; sourceTree = "<group>"; };
+		8418F12F27332168007E9CDB /* BenifitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenifitCell.swift; sourceTree = "<group>"; };
+		8418F13027332168007E9CDB /* BenifitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BenifitCell.xib; sourceTree = "<group>"; };
 		8423A46E2726B67600D1F126 /* ImageGallaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallaryCell.swift; sourceTree = "<group>"; };
 		8423A46F2726B67600D1F126 /* ImageGallaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGallaryCell.xib; sourceTree = "<group>"; };
 		8423A47C2727F36E00D1F126 /* ProjectInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInfoCell.swift; sourceTree = "<group>"; };
@@ -278,6 +282,15 @@
 				84ABD6509277B425FE5EFB17 /* Pods_Eva.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8418F1332733216E007E9CDB /* BenifitCell */ = {
+			isa = PBXGroup;
+			children = (
+				8418F12F27332168007E9CDB /* BenifitCell.swift */,
+				8418F13027332168007E9CDB /* BenifitCell.xib */,
+			);
+			path = BenifitCell;
 			sourceTree = "<group>";
 		};
 		8423A46D2726B63400D1F126 /* ImageGallaryCell */ = {
@@ -878,6 +891,7 @@
 		847CA8FA2716D22700103602 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8418F1332733216E007E9CDB /* BenifitCell */,
 				84B1FD20272A8A1100406102 /* ProjectBenifitsCell */,
 				84A769792728878500A579CA /* ProjectFeatureCell */,
 				84A769742728624400A579CA /* ProjectDetailsCell */,
@@ -1141,6 +1155,7 @@
 				847CA8FE2716D2BE00103602 /* HomeCell.xib in Resources */,
 				847CA8C52715F09A00103602 /* Colors.xcassets in Resources */,
 				8430ED84272D940F00376FC2 /* AboutUsMainCell.xib in Resources */,
+				8418F13227332168007E9CDB /* BenifitCell.xib in Resources */,
 				8430ED99272E958F00376FC2 /* success.json in Resources */,
 				8430EDBA272F429C00376FC2 /* error.json in Resources */,
 				847CA8E12716BC4000103602 /* MainViewController.xib in Resources */,
@@ -1256,6 +1271,7 @@
 				847CA8812713468200103602 /* AppConfigurations.swift in Sources */,
 				847CA8662713452300103602 /* BaseRequest.swift in Sources */,
 				847CA87C2713454600103602 /* StartUpCoordinator.swift in Sources */,
+				8418F13127332168007E9CDB /* BenifitCell.swift in Sources */,
 				848AC45A271EE2020040B07C /* ServicesViewModel.swift in Sources */,
 				84640A3C2720951F00FC7A72 /* SendRequestViewController.swift in Sources */,
 				848AC467271F14950040B07C /* ServiceCell.swift in Sources */,
@@ -1446,14 +1462,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2RTNC5CU2D;
+				DEVELOPMENT_TEAM = 5NR9XSH9GF;
 				INFOPLIST_FILE = Eva/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amrfawaz.eva.Eva;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutaz.eva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1466,14 +1483,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2RTNC5CU2D;
+				DEVELOPMENT_TEAM = 5NR9XSH9GF;
 				INFOPLIST_FILE = Eva/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amrfawaz.eva.Eva;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutaz.eva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

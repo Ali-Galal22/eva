@@ -29,7 +29,7 @@ class ProjectInfoCell: UITableViewCell {
         if projectType.isEmpty {
             imageViewProjectType.isHidden = true
         } else {
-            imageViewProjectType.isHidden = true
+            imageViewProjectType.isHidden = false
         }
         labelProjectType.text = projectType
         labelProjectTitle.text = projectTitle

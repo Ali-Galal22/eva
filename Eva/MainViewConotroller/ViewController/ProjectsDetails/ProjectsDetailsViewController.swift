@@ -45,6 +45,7 @@ class ProjectsDetailsViewController: UIViewController {
         tableview.register(UINib(nibName: Constants.CellsIdentefires.ProjectDetailsCell, bundle: nil), forCellReuseIdentifier: Constants.CellsIdentefires.ProjectDetailsCell)
         tableview.register(UINib(nibName: Constants.CellsIdentefires.ProjectFeatureCell, bundle: nil), forCellReuseIdentifier: Constants.CellsIdentefires.ProjectFeatureCell)
         tableview.register(UINib(nibName: Constants.CellsIdentefires.ProjectBenifitsCell, bundle: nil), forCellReuseIdentifier: Constants.CellsIdentefires.ProjectBenifitsCell)
+        tableview.register(UINib(nibName: Constants.CellsIdentefires.BenifitCell, bundle: nil), forCellReuseIdentifier: Constants.CellsIdentefires.BenifitCell)
         
     }
     
@@ -59,8 +60,14 @@ extension ProjectsDetailsViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch viewModel.getCells()[section] {
-        case .gallary, .projectInfo, .map, .projectDetails, .features, .benifits:
+        case .gallary, .projectInfo, .map, .projectDetails, .features:
             return 1
+        case .benifits(let opened):
+            if opened {
+                return viewModel.getBenifitsCount() + 1
+            } else {
+                return 1
+            }
         }
     }
     
@@ -92,9 +99,17 @@ extension ProjectsDetailsViewController: UITableViewDelegate, UITableViewDataSou
             projectFeaturesCell?.configureCell(projectDetails: viewModel.getProjectFeaturesCell(), opened: opened)
             return projectFeaturesCell!
         case .benifits(let opened):
-            let brojectBenifitsCell = tableView.dequeueReusableCell(withIdentifier: Constants.CellsIdentefires.ProjectBenifitsCell) as? ProjectBenifitsCell
-            brojectBenifitsCell?.configureCell(roomsNumber: viewModel.getProjectBenifitsCell().roomsNumber, kitchenNumber: viewModel.getProjectBenifitsCell().kitchensNumber, isHasElevator: viewModel.getProjectBenifitsCell().hasElevators, opened: opened)
-            return brojectBenifitsCell!
+            if indexPath.row == 0 {
+                let projectBenifitsCell = tableView.dequeueReusableCell(withIdentifier: Constants.CellsIdentefires.ProjectBenifitsCell) as? ProjectBenifitsCell
+                projectBenifitsCell?.configureCell(opened: opened)
+                return projectBenifitsCell!
+            } else {
+                let benifitsCell = tableView.dequeueReusableCell(withIdentifier: Constants.CellsIdentefires.BenifitCell) as? BenifitCell
+                let benifit = viewModel.getProjectBenifitsCell(index: indexPath.row)
+                benifitsCell?.configureCell(imageUrl: benifit.benifitIcon, benifitName: benifit.benifitName, benifitValue: benifit.benifitValue, benifitType: benifit.benifitType)
+                return benifitsCell!
+
+            }
         }
     }
     
@@ -106,10 +121,10 @@ extension ProjectsDetailsViewController: UITableViewDelegate, UITableViewDataSou
             tableview.reloadRows(at: [indexPath], with: .automatic)
             tableview.endUpdates()
         case .benifits(let opened):
-            viewModel.setBenifitsCellOpend(isOpen: !opened)
-            tableview.beginUpdates()
-            tableview.reloadRows(at: [indexPath], with: .automatic)
-            tableview.endUpdates()
+            if indexPath.row == 0 {
+                viewModel.setBenifitsCellOpend(isOpen: !opened)
+                tableView.reloadSections([indexPath.section], with: .automatic)
+            }
         default:
             break
         }
@@ -124,12 +139,8 @@ extension ProjectsDetailsViewController: UITableViewDelegate, UITableViewDataSou
             } else {
                 return 60
             }
-        case .benifits(let opened):
-            if (opened) {
-                return 289
-            } else {
-                return 60
-            }
+        case .benifits(_):
+            return 60
         default: return UITableView.automaticDimension
         }
     }

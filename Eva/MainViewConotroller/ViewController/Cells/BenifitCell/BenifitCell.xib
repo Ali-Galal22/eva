@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BenifitCell" rowHeight="60" id="KGk-i7-Jjw" customClass="BenifitCell" customModule="Eva" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aj-Vs-c4D">
+                        <rect key="frame" x="0.0" y="5" width="320" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdE-jt-bTq">
+                                <rect key="frame" x="24" y="0.0" width="97" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="living-room" translatesAutoresizingMaskIntoConstraints="NO" id="M6J-gq-Iob">
+                                        <rect key="frame" x="28.5" y="7.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="XbG-U0-ch8"/>
+                                            <constraint firstAttribute="width" constant="40" id="eN3-J8-SFc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="eva-blue-color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="7GW-47-oyV"/>
+                                    <constraint firstItem="M6J-gq-Iob" firstAttribute="centerX" secondItem="wdE-jt-bTq" secondAttribute="centerX" id="aLs-ne-RYe"/>
+                                    <constraint firstItem="M6J-gq-Iob" firstAttribute="centerY" secondItem="wdE-jt-bTq" secondAttribute="centerY" id="tT2-HG-v4a"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xV7-PH-d73">
+                                <rect key="frame" x="121" y="0.0" width="175" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عدد الغرف" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWt-Rj-IJf">
+                                        <rect key="frame" x="12" y="18" width="61.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s2-cT-9Jc">
+                                        <rect key="frame" x="151" y="25" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="H0F-re-UYo">
+                                        <rect key="frame" x="136" y="17.5" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="PSU-L7-FFl"/>
+                                            <constraint firstAttribute="height" constant="15" id="kPf-dJ-E7B"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3s2-cT-9Jc" secondAttribute="trailing" constant="24" id="E4i-Z0-rgd"/>
+                                    <constraint firstItem="H0F-re-UYo" firstAttribute="centerY" secondItem="xV7-PH-d73" secondAttribute="centerY" id="Phn-wF-kxH"/>
+                                    <constraint firstItem="NWt-Rj-IJf" firstAttribute="leading" secondItem="xV7-PH-d73" secondAttribute="leading" constant="12" id="olM-64-5Ua"/>
+                                    <constraint firstItem="3s2-cT-9Jc" firstAttribute="centerY" secondItem="xV7-PH-d73" secondAttribute="centerY" id="ovC-9c-24O"/>
+                                    <constraint firstAttribute="trailing" secondItem="H0F-re-UYo" secondAttribute="trailing" constant="24" id="uVt-07-Gbp"/>
+                                    <constraint firstItem="NWt-Rj-IJf" firstAttribute="centerY" secondItem="xV7-PH-d73" secondAttribute="centerY" id="yel-xE-FBE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wdE-jt-bTq" firstAttribute="centerY" secondItem="0aj-Vs-c4D" secondAttribute="centerY" id="4Rh-Xg-rMW"/>
+                            <constraint firstItem="xV7-PH-d73" firstAttribute="leading" secondItem="wdE-jt-bTq" secondAttribute="trailing" id="4h1-BA-VR4"/>
+                            <constraint firstItem="wdE-jt-bTq" firstAttribute="leading" secondItem="0aj-Vs-c4D" secondAttribute="leading" constant="24" id="Tz4-Hn-hSo"/>
+                            <constraint firstItem="xV7-PH-d73" firstAttribute="centerY" secondItem="0aj-Vs-c4D" secondAttribute="centerY" id="jO4-U9-fbw"/>
+                            <constraint firstAttribute="trailing" secondItem="xV7-PH-d73" secondAttribute="trailing" constant="24" id="pUY-el-dpl"/>
+                            <constraint firstItem="wdE-jt-bTq" firstAttribute="height" secondItem="0aj-Vs-c4D" secondAttribute="height" id="sOQ-d6-qC6"/>
+                            <constraint firstItem="xV7-PH-d73" firstAttribute="height" secondItem="0aj-Vs-c4D" secondAttribute="height" id="vMZ-hL-JEh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0aj-Vs-c4D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="7Wc-f1-VQD"/>
+                    <constraint firstAttribute="trailing" secondItem="0aj-Vs-c4D" secondAttribute="trailing" id="Mia-Zb-aQu"/>
+                    <constraint firstItem="0aj-Vs-c4D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="X27-sj-Weg"/>
+                    <constraint firstAttribute="bottom" secondItem="0aj-Vs-c4D" secondAttribute="bottom" constant="5" id="jtf-vN-qPm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageViewBenifitIcon" destination="M6J-gq-Iob" id="03g-Op-3d4"/>
+                <outlet property="imageViewCheckMark" destination="H0F-re-UYo" id="JRv-Dn-GAP"/>
+                <outlet property="labelBenifitName" destination="NWt-Rj-IJf" id="Gvn-7L-5uA"/>
+                <outlet property="labelBenifitValue" destination="3s2-cT-9Jc" id="32u-GD-1Tg"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check-mark" width="16.5" height="13"/>
+        <image name="living-room" width="39.5" height="35.5"/>
+        <namedColor name="eva-blue-color">
+            <color red="0.17647058823529413" green="0.29019607843137257" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

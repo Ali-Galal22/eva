@@ -11,24 +11,16 @@ import UIKit
 class ProjectBenifitsCell: UITableViewCell {
 
     @IBOutlet weak var imageViewOpenClose: UIImageView!
-    @IBOutlet weak var labelRoomNumbersValue: UILabel!
-    @IBOutlet weak var labelKitchenNumbersValue: UILabel!
-    @IBOutlet weak var imageViewKitchen: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func configureCell(roomsNumber: String, kitchenNumber: String, isHasElevator: Bool, opened: Bool) {
+    func configureCell(opened: Bool) {
         if opened {
             imageViewOpenClose.image = #imageLiteral(resourceName: "section-open-icon")
         } else {
             imageViewOpenClose.image = #imageLiteral(resourceName: "section-close-icon")
         }
-
-        labelRoomNumbersValue.text = roomsNumber
-        labelKitchenNumbersValue.text = kitchenNumber
-        imageViewKitchen.isHidden = !isHasElevator
-        
     }
 }

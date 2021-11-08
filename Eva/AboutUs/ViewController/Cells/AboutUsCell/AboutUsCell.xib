@@ -31,7 +31,7 @@
                         <rect key="frame" x="16" y="0.0" width="288" height="198"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRZ-db-1Cd">
-                                <rect key="frame" x="16" y="19" width="0.0" height="21"/>
+                                <rect key="frame" x="16" y="25" width="0.0" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="2r3-pf-tUe"/>
                                 </constraints>
@@ -40,13 +40,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="960-gN-Yi2">
-                                <rect key="frame" x="16" y="56" width="256" height="126"/>
+                                <rect key="frame" x="16" y="62" width="256" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-jh-beG">
-                                <rect key="frame" x="257" y="22" width="15" height="15"/>
+                                <rect key="frame" x="257" y="28" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="XbU-ON-nFO"/>
                                     <constraint firstAttribute="width" constant="15" id="c91-id-r1g"/>
@@ -57,11 +57,11 @@
                         <constraints>
                             <constraint firstItem="960-gN-Yi2" firstAttribute="leading" secondItem="q0l-je-NPM" secondAttribute="leading" constant="16" id="2ab-oW-gWx"/>
                             <constraint firstItem="sRZ-db-1Cd" firstAttribute="leading" secondItem="q0l-je-NPM" secondAttribute="leading" constant="16" id="2f1-0a-0Zw"/>
-                            <constraint firstAttribute="bottom" secondItem="960-gN-Yi2" secondAttribute="bottom" constant="16" id="Am1-JY-jgw"/>
+                            <constraint firstAttribute="bottom" secondItem="960-gN-Yi2" secondAttribute="bottom" priority="250" constant="16" id="Am1-JY-jgw"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="60" id="Mor-c3-e7s"/>
                             <constraint firstAttribute="trailing" secondItem="960-gN-Yi2" secondAttribute="trailing" constant="16" id="WPs-0l-Iog"/>
                             <constraint firstItem="960-gN-Yi2" firstAttribute="top" secondItem="sRZ-db-1Cd" secondAttribute="bottom" constant="16" id="ZL1-nv-4Lc"/>
-                            <constraint firstItem="sRZ-db-1Cd" firstAttribute="top" secondItem="q0l-je-NPM" secondAttribute="top" constant="19" id="ZLe-6H-Al1"/>
+                            <constraint firstItem="sRZ-db-1Cd" firstAttribute="top" secondItem="q0l-je-NPM" secondAttribute="top" constant="25" id="ZLe-6H-Al1"/>
                             <constraint firstItem="LB2-jh-beG" firstAttribute="centerY" secondItem="sRZ-db-1Cd" secondAttribute="centerY" id="fYe-h9-hcg"/>
                             <constraint firstAttribute="trailing" secondItem="LB2-jh-beG" secondAttribute="trailing" constant="16" id="rRv-cL-UYK"/>
                         </constraints>

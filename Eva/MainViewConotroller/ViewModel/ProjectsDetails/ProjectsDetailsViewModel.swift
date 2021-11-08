@@ -73,12 +73,16 @@ class ProjectsDetailsViewModel {
         return [.gallary, .projectInfo, .map, .projectDetails, featureCell, benifitsCell]
     }
     
+    func getBenifitsCount() -> Int {
+        return projectDetails?.features?.count ?? 0
+    }
+    
     func getGallary() -> [Gallary] {
         self.projectDetails?.gallery ?? []
     }
     
     func getProjectInfoCell() -> (projectType: String, projectTitle: String, projectExcerpt: String) {
-        return ("", projectDetails?.project?.title ?? "", projectDetails?.project?.excerpt ?? "")
+        return (projectDetails?.type?.first?.name ?? "", projectDetails?.project?.title ?? "", projectDetails?.project?.excerpt ?? "")
     }
     
     func getMapHTML() -> String {
@@ -101,9 +105,9 @@ class ProjectsDetailsViewModel {
         benifitsCell = .benifits(opened: isOpen)
     }
     
-    
-    func getProjectBenifitsCell() -> (roomsNumber: String, kitchensNumber: String, hasElevators: Bool) {
-        return (projectDetails?.meta?.rooms_count ?? "0", projectDetails?.meta?.kitchen ?? "0", Int(projectDetails?.meta?.elevator ?? "0") ?? 0 > 0 )
+    func getProjectBenifitsCell(index: Int) -> (benifitName: String, benifitValue: String, benifitType: String, benifitIcon: String) {
+        let benifit = projectDetails?.features?[index - 1]
+        return (benifit?.name ?? "", benifit?.value ?? "", benifit?.type ?? "", benifit?.image ?? "")
     }
     
     func showInterest() {

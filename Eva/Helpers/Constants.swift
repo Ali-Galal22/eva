@@ -24,6 +24,7 @@ struct Constants {
         static let ProjectDetailsCell = "ProjectDetailsCell"
         static let ProjectFeatureCell = "ProjectFeatureCell"
         static let ProjectBenifitsCell = "ProjectBenifitsCell"
+        static let BenifitCell = "BenifitCell"
         
         
         static let PartnerCell = "PartnerCell"

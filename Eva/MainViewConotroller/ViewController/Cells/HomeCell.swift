@@ -18,6 +18,7 @@ class HomeCell: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelStartFrom: UILabel!
     @IBOutlet weak var labelPrice: UILabel!
     
     private weak var delegate: HomeCellDelegate?
@@ -38,7 +39,13 @@ class HomeCell: UITableViewCell {
     func configureProjectCell(with delegate: HomeCellDelegate, and project: Project?) {
         self.delegate = delegate
         self.labelTitle.text = project?.title
-        self.labelPrice.text = project?.price
+        
+
+
+        if let priceString = project?.price, !priceString.isEmpty {
+            labelStartFrom.text = "تبدأ من "
+            labelPrice.text = priceString
+        }
         if let imageURL = URL(string: project?.image ?? "") {
             self.itemImageView.kf.setImage(with: imageURL)
         }

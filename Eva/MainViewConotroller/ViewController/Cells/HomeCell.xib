@@ -43,9 +43,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svY-gB-zlR">
+                                        <rect key="frame" x="16" y="88" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8o3-IT-cNN">
                                         <rect key="frame" x="16" y="88" width="148" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="eva-blue-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQE-Re-Gfa">
@@ -73,14 +79,16 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="VQE-Re-Gfa" firstAttribute="top" secondItem="7Mp-Fj-g7u" secondAttribute="bottom" priority="250" constant="72" id="05V-dY-7e7"/>
+                                    <constraint firstItem="8o3-IT-cNN" firstAttribute="leading" secondItem="svY-gB-zlR" secondAttribute="trailing" id="0Ln-kg-bzX"/>
+                                    <constraint firstItem="VQE-Re-Gfa" firstAttribute="leading" secondItem="8o3-IT-cNN" secondAttribute="trailing" constant="8" id="3Kw-Cy-AYe"/>
                                     <constraint firstItem="7Mp-Fj-g7u" firstAttribute="top" secondItem="svz-oP-hLx" secondAttribute="top" constant="16" id="GxM-B8-HRK"/>
                                     <constraint firstItem="svY-gB-zlR" firstAttribute="leading" secondItem="7Mp-Fj-g7u" secondAttribute="leading" id="Idk-PP-9D4"/>
                                     <constraint firstItem="svY-gB-zlR" firstAttribute="top" secondItem="VQE-Re-Gfa" secondAttribute="top" id="O79-Li-yT4"/>
                                     <constraint firstAttribute="bottom" secondItem="VQE-Re-Gfa" secondAttribute="bottom" constant="16" id="VcB-KP-lAU"/>
                                     <constraint firstItem="7Mp-Fj-g7u" firstAttribute="leading" secondItem="svz-oP-hLx" secondAttribute="leading" constant="16" id="aX1-Fw-bhb"/>
+                                    <constraint firstItem="8o3-IT-cNN" firstAttribute="centerY" secondItem="svY-gB-zlR" secondAttribute="centerY" id="bkc-FO-FVW"/>
                                     <constraint firstAttribute="trailing" secondItem="7Mp-Fj-g7u" secondAttribute="trailing" constant="16" id="clV-BX-GRG"/>
                                     <constraint firstAttribute="trailing" secondItem="VQE-Re-Gfa" secondAttribute="trailing" constant="16" id="sK9-aF-m6Z"/>
-                                    <constraint firstItem="VQE-Re-Gfa" firstAttribute="leading" secondItem="svY-gB-zlR" secondAttribute="trailing" constant="8" id="y3Q-9E-cNB"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -113,7 +121,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="itemImageView" destination="IUM-jE-Pt8" id="9y0-SU-hnR"/>
-                <outlet property="labelPrice" destination="svY-gB-zlR" id="hze-ob-dUt"/>
+                <outlet property="labelPrice" destination="8o3-IT-cNN" id="xDO-VZ-n8U"/>
+                <outlet property="labelStartFrom" destination="svY-gB-zlR" id="bhs-xv-kPb"/>
                 <outlet property="labelTitle" destination="7Mp-Fj-g7u" id="LEK-Lm-1Uf"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="175.11160714285714"/>
