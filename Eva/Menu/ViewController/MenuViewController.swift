@@ -39,6 +39,16 @@ class MenuViewController: UIViewController {
         tableview.register(UINib(nibName: Constants.CellsIdentefires.MenuItemCell, bundle: nil), forCellReuseIdentifier: Constants.CellsIdentefires.MenuItemCell)
     }
 
+    @IBAction func buttonInstagramClicked(_ sender: Any) {
+        guard let url = URL(string: "https://www.instagram.com/eva.resc") else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func buttonTwitterClicked(_ sender: Any) {
+        guard let url = URL(string: "https://twitter.com/eva_resc") else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
 }
 
 extension MenuViewController: UITableViewDelegate, UITableViewDataSource {

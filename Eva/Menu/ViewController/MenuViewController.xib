@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,22 +28,72 @@
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CFe-Ja-7yY">
-                    <rect key="frame" x="0.0" y="202" width="414" height="660"/>
+                    <rect key="frame" x="0.0" y="202" width="414" height="590"/>
                     <color key="backgroundColor" red="0.035294117649999998" green="0.070588235289999995" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="8ri-Ti-h8a"/>
                         <outlet property="delegate" destination="-1" id="R05-UX-k0Z"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LT3-Oy-lEw">
+                    <rect key="frame" x="0.0" y="792" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMA-ht-A8p">
+                            <rect key="frame" x="33" y="5" width="40" height="40"/>
+                            <color key="backgroundColor" name="eva-blue-color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="GnN-o2-HO5"/>
+                                <constraint firstAttribute="width" secondItem="BMA-ht-A8p" secondAttribute="height" multiplier="1:1" id="WYH-6d-zsg"/>
+                            </constraints>
+                            <state key="normal" image="instagram-icon"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonInstagramClicked:" destination="-1" eventType="touchUpInside" id="DjZ-U5-7c9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhD-fA-W6A">
+                            <rect key="frame" x="108" y="5" width="40" height="40"/>
+                            <color key="backgroundColor" name="eva-blue-color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="uvn-27-47Y"/>
+                                <constraint firstAttribute="width" secondItem="OhD-fA-W6A" secondAttribute="height" multiplier="1:1" id="yf3-Bc-Loi"/>
+                            </constraints>
+                            <state key="normal" image="twitter-icon"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonTwitterClicked:" destination="-1" eventType="touchUpInside" id="gpC-0e-HtI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OhD-fA-W6A" firstAttribute="leading" secondItem="BMA-ht-A8p" secondAttribute="trailing" constant="35" id="0WZ-sy-A1h"/>
+                        <constraint firstAttribute="height" constant="50" id="F0A-ny-cJW"/>
+                        <constraint firstItem="OhD-fA-W6A" firstAttribute="centerY" secondItem="BMA-ht-A8p" secondAttribute="centerY" id="bV9-6B-V8w"/>
+                        <constraint firstItem="BMA-ht-A8p" firstAttribute="centerY" secondItem="LT3-Oy-lEw" secondAttribute="centerY" id="gVD-Ri-xf6"/>
+                        <constraint firstItem="BMA-ht-A8p" firstAttribute="leading" secondItem="LT3-Oy-lEw" secondAttribute="leading" constant="33" id="kCE-4w-a4p"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.035294117647058823" green="0.070588235294117646" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CFe-Ja-7yY" secondAttribute="trailing" id="4zg-Lf-7ox"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LT3-Oy-lEw" secondAttribute="trailing" id="64C-rq-hF4"/>
                 <constraint firstItem="CFe-Ja-7yY" firstAttribute="top" secondItem="39N-wb-e01" secondAttribute="bottom" constant="60" id="Bf1-BS-hIj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="LT3-Oy-lEw" secondAttribute="leading" id="DDI-X7-l6D"/>
                 <constraint firstItem="39N-wb-e01" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="FfA-dU-De6"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CFe-Ja-7yY" secondAttribute="bottom" id="TzE-B5-9mD"/>
+                <constraint firstItem="LT3-Oy-lEw" firstAttribute="top" secondItem="CFe-Ja-7yY" secondAttribute="bottom" id="ZHi-ZW-mzz"/>
                 <constraint firstItem="39N-wb-e01" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aff-Xs-NdP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LT3-Oy-lEw" secondAttribute="bottom" constant="20" id="eBW-yw-qy4"/>
                 <constraint firstItem="CFe-Ja-7yY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qRh-be-FQ9"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
@@ -50,5 +101,10 @@
     </objects>
     <resources>
         <image name="eva-dark-logo" width="78" height="82.5"/>
+        <image name="instagram-icon" width="17" height="17"/>
+        <image name="twitter-icon" width="18.5" height="14.5"/>
+        <namedColor name="eva-blue-color">
+            <color red="0.17647058823529413" green="0.29019607843137257" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
