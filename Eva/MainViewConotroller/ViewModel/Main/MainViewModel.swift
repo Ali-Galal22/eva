@@ -26,7 +26,7 @@ enum View {
 enum FilterSections {
     case location(items: [String], selectedIndex: Int?, selectedKeyValue: String?)
     case type(items: [String], selectedIndex: Int?, selectedKeyValue: String?)
-    case roomsNumber(items: [String], roomsNumber: Int? = 1)
+    case roomsNumber(items: [String], roomsNumber: Int? = 0)
     case status(items: [String], selectedIndex: Int?, selectedKeyValue: String?)
     case filter(items: [String])
     
@@ -37,7 +37,7 @@ enum FilterSections {
         case .type(_, _, let selectedKeyValue):
             return selectedKeyValue
         case .roomsNumber(_, let roomsNumber):
-            return "\(roomsNumber ?? 1)"
+            return "\(roomsNumber ?? 0)"
         case .status(_, _, let selectedKeyValue):
             return selectedKeyValue
         default:
@@ -130,7 +130,7 @@ class MainViewModel {
             guard let self = self else { return }
             switch result {
             case .success(let response):
-                self.service = response.data?.services
+//                self.service = response.data?.services
                 self.projects = response.data?.projects
                 self.state = .ready(.homeList(queryParameters: [:]))
             case .failure(let error):
@@ -210,7 +210,7 @@ extension MainViewModel {
         
         
         // Check if no filter selected 
-        if parameters.count == 1 && filterRoomsNumberSection.getSelecetedIndex() == "1" {
+        if parameters.count == 1 && filterRoomsNumberSection.getSelecetedIndex() == "0" {
             return
         }
         
@@ -221,7 +221,7 @@ extension MainViewModel {
             guard let self = self else { return }
             switch result {
             case .success(let response):
-                self.service = response.data?.services
+//                self.service = response.data?.services
                 self.projects = response.data?.projects
                 self.state = .ready(.filter())
             case .failure(let error):
@@ -245,7 +245,7 @@ extension MainViewModel {
         
         filterLocationSection = .location(items: filterLocationsItems, selectedIndex: nil, selectedKeyValue: nil)
         filterTypesSection = .type(items: filterTypesItems, selectedIndex: nil, selectedKeyValue: nil)
-        filterRoomsNumberSection = .roomsNumber(items: filterRoomNumbersItems, roomsNumber: 1)
+        filterRoomsNumberSection = .roomsNumber(items: filterRoomNumbersItems, roomsNumber: 0)
         filterStatusSection = .status(items: filterStatusItems, selectedIndex: nil, selectedKeyValue: nil)
         filterButtonSection = .filter(items: filterButtonItem)
 
@@ -315,7 +315,7 @@ extension MainViewModel {
         filterLocationSection = .location(items: filterLocationsItems, selectedIndex: nil, selectedKeyValue: nil)
         filterTypesSection = .type(items: filterTypesItems, selectedIndex: nil, selectedKeyValue: nil)
         filterStatusSection = .status(items: filterStatusItems, selectedIndex: nil, selectedKeyValue: nil)
-        filterRoomsNumberSection = .roomsNumber(items: filterRoomNumbersItems, roomsNumber: 1)
+        filterRoomsNumberSection = .roomsNumber(items: filterRoomNumbersItems, roomsNumber: 0)
         
         getHomeList()
     }
