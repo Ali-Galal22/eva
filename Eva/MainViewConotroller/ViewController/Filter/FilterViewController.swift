@@ -101,7 +101,7 @@ extension FilterViewController: UITableViewDelegate, UITableViewDataSource {
             let filterRoomNumbersCell = tableView.dequeueReusableCell(withIdentifier: Constants.CellsIdentefires.FilterRoomNumberCell) as? FilterRoomNumberCell
             filterRoomNumbersCell?.delegate = self
             filterRoomNumbersCell?.labelRoomsNumber.text = items[row]
-            filterRoomNumbersCell?.labelCount.text = "\(roomsNumber ?? 1)"
+            filterRoomNumbersCell?.labelCount.text = "\(roomsNumber ?? 0)"
             return filterRoomNumbersCell!
 
         case .status(let items, let selecetdIndex, _):
