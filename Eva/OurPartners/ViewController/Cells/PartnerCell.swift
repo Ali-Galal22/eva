@@ -19,7 +19,9 @@ class PartnerCell: UITableViewCell {
 
     func configuerCell(imageUrl: String?, partnerName: String?) {
         self.labelPartnerName.text = partnerName ?? ""
-        if let url = URL(string: imageUrl ?? "") {
+        let image_url = imageUrl?.addingPercentEncoding(withAllowedCharacters:CharacterSet.urlQueryAllowed)
+
+        if let url = URL(string: image_url ?? "") {
             self.imageViewPartner.kf.setImage(with: url)
         }
     }
