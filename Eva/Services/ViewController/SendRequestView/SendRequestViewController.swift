@@ -94,6 +94,7 @@ class SendRequestViewController: UIViewController {
     }
     
     @IBAction func buttonSendRequestClicked(_ sender: Any) {
+        self.view.endEditing(true)
         viewModel.isValidForm = true
         viewModel.validateName()
         viewModel.validateEmail()
@@ -168,7 +169,13 @@ extension SendRequestViewController: SendRequestDelegate {
             }
         case .error:
             activityIndicator.stopAnimating()
-            break
+            let errorView = ErrorView()
+            errorView.modalPresentationStyle = .overFullScreen
+            errorView.onRetry = { [weak self] in
+                guard let self = self else { return }
+                self.dismiss(animated: true, completion: nil)
+            }
+            self.present(errorView, animated: true, completion: nil)
         }
     }
     

@@ -172,8 +172,12 @@ class SendRequestViewModel {
         APIClient.sendRequest(parameters: SendRequestRequest(name: name, email: email, mobile: mobile, message: details)) { [weak self] result in
             guard let self = self else { return }
             switch result {
-            case .success:
-                self.delegate?.onStateChanged(state: .ready())
+            case .success(let response):
+                if response.data?.status == "spam" {
+                    self.delegate?.onStateChanged(state: .error(error: ""))
+                } else {
+                    self.delegate?.onStateChanged(state: .ready())
+                }
             case .failure(let error):
                 self.delegate?.onStateChanged(state: .error(error: error.localizedDescription))
             }
