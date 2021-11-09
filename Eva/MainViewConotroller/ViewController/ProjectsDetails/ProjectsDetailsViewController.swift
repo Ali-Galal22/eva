@@ -64,9 +64,13 @@ extension ProjectsDetailsViewController: UITableViewDelegate, UITableViewDataSou
             return 1
         case .benifits(let opened):
             if opened {
-                return viewModel.getBenifitsCount() + 1
+                if viewModel.getBenifitsCount() > 0 {
+                    return viewModel.getBenifitsCount() + 1
+                } else {
+                    return 0
+                }
             } else {
-                return 1
+                return viewModel.getBenifitsCount() > 0 ? 1 : 0
             }
         }
     }
