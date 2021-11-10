@@ -29,6 +29,10 @@ class StartUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.viewModel.navigateToHome()
+        }
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

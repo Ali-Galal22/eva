@@ -32,7 +32,6 @@ class HomeCoordinator {
 
     
     private lazy var tabBarController: UITabBarController = {
-        let backButton = UIBarButtonItem(image: UIImage(named: "back2"), style: .plain, target: self, action: #selector(back))
 
         let viewModel = HomeViewModel(coordinator: self)
         let homeViewController = HomeTabBarViewController(viewModel: viewModel)
@@ -47,7 +46,6 @@ class HomeCoordinator {
         mainNavigationController.navigationBar.tintColor = .white
         let filter = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(navigateToFilter))
         mainNavigationController.navigationBar.topItem?.rightBarButtonItem = filter
-        mainNavigationController.navigationBar.topItem?.leftBarButtonItem = backButton
         mainCoordinator.setNavigationController(navigationController: mainNavigationController)
         
 
@@ -57,7 +55,6 @@ class HomeCoordinator {
         servicesNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         servicesNavigationController.navigationBar.titleTextAttributes = textAttributes
         servicesNavigationController.navigationBar.tintColor = .white
-        servicesNavigationController.navigationBar.topItem?.leftBarButtonItem = backButton
         servicesCoordinator.setNavigationBar(navigationController: servicesNavigationController)
         
         

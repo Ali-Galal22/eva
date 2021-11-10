@@ -32,7 +32,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-CJ-EXw">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-CJ-EXw">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup-image" translatesAutoresizingMaskIntoConstraints="NO" id="dC1-Zy-miu">
@@ -126,19 +126,51 @@
                         <constraint firstAttribute="trailing" secondItem="Itg-03-qWK" secondAttribute="trailing" constant="30" id="ub4-Xy-UaW"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbD-6u-Ue0">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eva-dark-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ad2-aZ-nZN">
+                            <rect key="frame" x="103.5" y="150" width="207" height="207"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ad2-aZ-nZN" secondAttribute="height" multiplier="1:1" id="Hq2-QN-ckJ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خدمات عقارية متكاملة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSt-BM-bNg">
+                            <rect key="frame" x="16" y="457" width="382" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="eva-blue-color"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="PSt-BM-bNg" secondAttribute="trailing" constant="16" id="0iM-pt-RqO"/>
+                        <constraint firstItem="ad2-aZ-nZN" firstAttribute="centerX" secondItem="LbD-6u-Ue0" secondAttribute="centerX" id="17W-5C-a8L"/>
+                        <constraint firstItem="ad2-aZ-nZN" firstAttribute="top" secondItem="LbD-6u-Ue0" secondAttribute="top" constant="150" id="9bS-12-UrC"/>
+                        <constraint firstItem="ad2-aZ-nZN" firstAttribute="width" secondItem="LbD-6u-Ue0" secondAttribute="width" multiplier="0.5" id="Glm-xq-Yd6"/>
+                        <constraint firstItem="PSt-BM-bNg" firstAttribute="leading" secondItem="LbD-6u-Ue0" secondAttribute="leading" constant="16" id="PhT-7K-opN"/>
+                        <constraint firstItem="PSt-BM-bNg" firstAttribute="centerX" secondItem="ad2-aZ-nZN" secondAttribute="centerX" id="Xh9-CG-Ej5"/>
+                        <constraint firstItem="PSt-BM-bNg" firstAttribute="top" secondItem="ad2-aZ-nZN" secondAttribute="bottom" constant="100" id="dok-WR-bAT"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="bg-color"/>
+            <color key="backgroundColor" name="eva-blue-color"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LbD-6u-Ue0" secondAttribute="trailing" id="9cw-Ud-RSX"/>
                 <constraint firstItem="rwF-CJ-EXw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ax7-qd-Co5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rwF-CJ-EXw" secondAttribute="bottom" id="KB0-kh-g4P"/>
+                <constraint firstItem="LbD-6u-Ue0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z2D-yN-anH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LbD-6u-Ue0" secondAttribute="bottom" id="a9O-Te-rNx"/>
                 <constraint firstItem="rwF-CJ-EXw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iOF-HR-O6p"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rwF-CJ-EXw" secondAttribute="trailing" id="khm-cV-YR7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="LbD-6u-Ue0" secondAttribute="top" id="wzl-3Z-4Aq"/>
             </constraints>
             <point key="canvasLocation" x="139" y="102"/>
         </view>
     </objects>
     <resources>
+        <image name="eva-dark-logo" width="78" height="82.5"/>
         <image name="startup-image" width="1016" height="381"/>
         <namedColor name="bg-color">
             <color red="0.92199999094009399" green="0.93300002813339233" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
