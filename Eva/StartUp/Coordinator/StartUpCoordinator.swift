@@ -14,8 +14,9 @@ class StartUpCoordinator {
     func start() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = rootNavigationController
         window?.makeKeyAndVisible()
+        window?.rootViewController = rootNavigationController
+
     }
     
     private lazy var rootNavigationController: UINavigationController = {

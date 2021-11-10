@@ -90,7 +90,7 @@ class ProjectsDetailsViewModel {
     }
     
     func getProjectDetailsCell() -> (startDate: String, endDate: String, projectStatus: String, porjectLocation: String, projectType: String) {
-        return (projectDetails?.meta?.date_start ?? "", projectDetails?.meta?.date_end ?? "", projectDetails?.status?.first?.name ?? "", projectDetails?.location?.first?.name ?? "", projectDetails?.meta?.type ?? "")
+        return (projectDetails?.meta?.date_start ?? "", projectDetails?.meta?.date_end ?? "", projectDetails?.status?.first?.name ?? "", projectDetails?.location?.first?.name ?? "", projectDetails?.type?.first?.name ?? "")
     }
     
     func getProjectFeaturesCell() -> String {

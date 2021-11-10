@@ -26,10 +26,10 @@ class BenifitCell: UITableViewCell {
         labelBenifitName.text = benifitName
         labelBenifitValue.text = benifitValue
 
-        if benifitType == "true_false" {
+        if benifitType == "true_false" && benifitValue == "1" {
             labelBenifitValue.isHidden = true
             imageViewCheckMark.isHidden = false
-        } else {
+        } else if !benifitValue.isEmpty {
             labelBenifitValue.text = benifitValue
             labelBenifitValue.isHidden = false
             imageViewCheckMark.isHidden = true
