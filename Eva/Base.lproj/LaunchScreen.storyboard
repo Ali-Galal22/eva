@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-ExtraBold.ttf">
+            <string>Tajawal-ExtraBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -17,19 +22,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eva-splash-icon" translatesAutoresizingMaskIntoConstraints="NO" id="l8n-Hm-9bU">
-                                <rect key="frame" x="103.5" y="349.5" width="207" height="207"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUr-Wq-Erj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eva-dark-logo" translatesAutoresizingMaskIntoConstraints="NO" id="h4k-xc-KxW">
+                                        <rect key="frame" x="103.5" y="150" width="207" height="207"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="h4k-xc-KxW" secondAttribute="height" multiplier="1:1" id="Xz1-2f-xj9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خدمات عقارية متكاملة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQ4-Co-vX5">
+                                        <rect key="frame" x="16" y="457" width="382" height="25"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-ExtraBold" family="Tajawal" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="eva-blue-color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="l8n-Hm-9bU" secondAttribute="height" multiplier="1:1" id="2TD-Uo-Ryh"/>
+                                    <constraint firstItem="h4k-xc-KxW" firstAttribute="width" secondItem="wUr-Wq-Erj" secondAttribute="width" multiplier="0.5" id="EzY-np-U4x"/>
+                                    <constraint firstItem="h4k-xc-KxW" firstAttribute="centerX" secondItem="wUr-Wq-Erj" secondAttribute="centerX" id="OMA-MU-Mff"/>
+                                    <constraint firstItem="eQ4-Co-vX5" firstAttribute="centerX" secondItem="h4k-xc-KxW" secondAttribute="centerX" id="iSt-7f-XiN"/>
+                                    <constraint firstAttribute="trailing" secondItem="eQ4-Co-vX5" secondAttribute="trailing" constant="16" id="imu-MV-eVM"/>
+                                    <constraint firstItem="eQ4-Co-vX5" firstAttribute="top" secondItem="h4k-xc-KxW" secondAttribute="bottom" constant="100" id="iuV-sg-Lxo"/>
+                                    <constraint firstItem="h4k-xc-KxW" firstAttribute="top" secondItem="wUr-Wq-Erj" secondAttribute="top" constant="150" id="uzl-Qq-M0l"/>
+                                    <constraint firstItem="eQ4-Co-vX5" firstAttribute="leading" secondItem="wUr-Wq-Erj" secondAttribute="leading" constant="16" id="vhU-e9-vm2"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="eva-blue-color"/>
                         <constraints>
-                            <constraint firstItem="l8n-Hm-9bU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BoH-NW-557"/>
-                            <constraint firstItem="l8n-Hm-9bU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FTp-Nb-63f"/>
-                            <constraint firstItem="l8n-Hm-9bU" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="bdd-aO-7wy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wUr-Wq-Erj" secondAttribute="trailing" id="3zd-eA-Jca"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="wUr-Wq-Erj" secondAttribute="top" id="Hc5-F9-Qub"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wUr-Wq-Erj" secondAttribute="bottom" id="MkD-Hg-S6R"/>
+                            <constraint firstItem="wUr-Wq-Erj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uKD-Ql-ABb"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,9 +66,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="eva-splash-icon" width="133" height="141"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="eva-dark-logo" width="78" height="82.5"/>
+        <namedColor name="eva-blue-color">
+            <color red="0.17647058823529413" green="0.29019607843137257" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
